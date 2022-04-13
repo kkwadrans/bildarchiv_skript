@@ -1,0 +1,4 @@
+Diese dateinamen gibt es doppelt!: 
+00.jpg  00.png  
+doppelt.txt  doppelt.md  
+truncated_1.JPG  truncated_1.png  
