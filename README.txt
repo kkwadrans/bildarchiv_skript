@@ -1,3 +1,5 @@
+#Skript ausführen:
+
 SCHRITT 1: 
 Python 3.5 oder höhere Version installieren, dabei die Option "Add Python to PATH" auswählen
 
