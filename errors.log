@@ -5,3 +5,991 @@ image file is truncated (25 bytes not processed)
 cannot identify image file 'alle_bilder/kaputt.md'
 alle_bilder/doppelt.txt ist 0 bit groß
 alle_bilder/unsinn.xml ist 0 bit groß
+
+ ----- 03.05.2022 ----- 
+17:03:21: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+image file is truncated (20 bytes not processed)+
+17:03:21: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/doppelt.md'+
+17:03:21: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/truncated_1.png'+
+17:03:22: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+image file is truncated (25 bytes not processed)+
+17:03:22: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/kaputt.md'+
+17:03:22: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/doppelt.txt'+
+17:03:22: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/unsinn.xml'+
+
+ ----- 03.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+17:05:10: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+image file is truncated (20 bytes not processed)+
+17:05:10: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/doppelt.md'+
+17:05:10: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/truncated_1.png'+
+17:05:10: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+image file is truncated (25 bytes not processed)+
+17:05:10: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/kaputt.md'+
+17:05:10: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/doppelt.txt'+
+17:05:10: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/unsinn.xml'+
+
+ ----- 03.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+
+17:13:08: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+image file is truncated (20 bytes not processed)+
+17:14:16: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/doppelt.md'+
+17:14:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+cannot identify image file '/home/user/bildarchiv_skript/alle_bilder/truncated_1.png'+
+
+ ----- 03.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+
+17:16:55: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+17:16:55: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+17:16:55: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+17:16:55: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+17:16:55: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+17:16:55: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+17:16:55: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 03.05.2022 ----- 
+ +++ Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder +++
+17:20:24: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+17:20:24: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+17:20:24: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+17:20:24: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+17:20:24: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+17:20:24: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+17:20:24: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 03.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+17:23:24: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+17:23:24: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+17:23:24: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+17:23:24: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+17:23:25: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+17:23:25: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+17:23:25: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 03.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+17:27:32: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+17:27:32: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+17:27:32: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+17:27:32: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+17:27:33: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+17:27:33: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+17:27:33: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 03.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+17:31:53: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+17:31:53: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+17:31:53: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+17:31:53: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+17:31:54: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+17:31:54: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+17:31:54: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+09:07:12: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+09:07:12: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+09:07:12: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+09:07:12: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+09:07:12: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+09:07:12: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+09:07:13: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+09:12:59: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+09:12:59: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+09:12:59: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+09:13:00: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+09:13:00: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+09:13:00: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+09:13:00: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+09:13:11: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+09:13:11: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+09:13:11: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+09:13:12: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+09:13:12: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+09:13:12: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+09:13:12: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+09:13:18: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+09:13:18: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+09:13:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+09:13:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+09:13:18: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+09:13:18: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+09:13:19: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+09:13:32: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+09:13:32: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+09:13:32: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+09:13:32: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+09:13:32: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+09:13:32: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+09:13:32: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+09:34:43: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+09:34:43: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+09:34:43: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+09:34:44: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+09:34:44: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+09:34:44: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+09:34:44: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+09:35:38: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+09:35:38: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+09:35:38: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+09:35:38: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+09:35:38: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+09:35:38: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+09:35:38: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:02:18: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:02:18: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:02:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:02:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:02:18: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:02:18: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:02:19: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:06:02: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:06:02: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:06:02: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:06:02: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:06:03: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:06:03: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:06:03: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:09:01: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:09:01: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:09:01: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:09:01: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:09:01: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:09:01: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:09:02: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:11:22: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:11:22: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:11:22: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:11:22: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:11:22: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:11:22: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:11:22: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:13:07: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:13:07: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:13:07: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:13:07: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:13:07: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:13:07: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:13:07: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:27:19: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:27:19: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:27:19: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:27:19: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:27:19: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:27:19: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:27:19: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:28:21: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:28:21: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:28:21: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:28:21: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:28:21: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:28:21: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:28:21: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:32:48: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:32:48: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:32:48: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:32:48: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:32:48: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:32:48: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:32:48: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:33:43: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:33:43: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:33:43: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:33:44: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:33:44: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:33:44: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:33:44: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:34:35: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:34:35: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:34:35: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:34:35: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:34:35: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:34:35: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:34:35: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:36:33: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:36:33: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:36:33: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:36:33: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:36:33: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:36:33: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:36:33: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:37:43: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:37:44: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:37:44: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:37:44: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:37:44: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:37:44: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:37:44: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:42:09: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:42:09: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:42:09: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:42:09: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:42:09: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:42:09: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:42:10: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:42:45: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:42:46: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:42:46: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:42:46: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:42:46: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:42:46: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:42:46: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:43:26: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:43:26: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:43:26: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:43:26: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:43:27: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:43:27: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:43:27: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:44:18: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:44:18: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:44:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:44:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:44:19: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:44:19: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:44:19: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:51:40: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:51:40: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:51:40: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:51:40: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:51:40: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:51:40: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:51:40: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+10:52:37: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:52:37: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:52:37: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:52:37: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:52:38: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:52:38: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:52:38: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+10:57:38: /home/user/bildarchiv_skript/main.py ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/README.txt ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/logs/HEAD ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/logs/refs/heads/master ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/HEAD ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/pre-receive.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/pre-applypatch.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/applypatch-msg.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/post-update.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/pre-rebase.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/pre-push.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/pre-merge-commit.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/pre-commit.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/update.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/commit-msg.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/prepare-commit-msg.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/hooks/fsmonitor-watchman.sample ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/info/exclude ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/packed-refs ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/config ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/4f/9295c6cc74e9346fc10268f0388402565b7629 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/7f/8a5f974140e567c557aacec08e5663b1a6e571 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/2f/7450289c87788108238c325cd916dc813e66b4 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/85/5aec78a8018179cbf7993eb13c620af27ad63e ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/e6/2dd228e3ab2b61ad4d77babd82fc36f046e740 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/f9/11eb50afa5df380333257ea2503c55acc464da ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/4b/a96e487088785ab141bd04d0f28fad86055fd1 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/cd/106226f6a346be40e7c3ddc93a7605e4f3b171 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/aa/8d599fd525f4263117ee8c6410f755c490ac79 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/ea/31c26ca559d91e1b89a953c2288f49d9929291 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/b7/911efa4119be2da3ef4b5839592b0dff5aa7fc ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/f5/3152142a662613c0debf93c62537bcabde7f73 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/01/40c337e384399f88bafa4f812f3a4bd16c3d5e ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/0a/29924d85629a46b16fc1b0aef7372698be39e7 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/24/5f8010df7bd5d5a8b5546158aa2b3a154349f5 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/57/3cf9565d27093a1068ae708a756cb1be0d6f17 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/37/5d08b60324068ab15a6051c5cb0f448a970d75 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/fa/e5df006b72e5bf9c11252dab716e313d2c3c0f ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/82/e7a280175f601f3dc054836b907cb02b9aace0 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/c1/8f9e284845402b066cf31a792717b26a7e2238 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/e3/c297c1d0fc1ede716f773300b3221200b5ec51 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/2d/929ecd07602b603507b06dfdf718e634402bf0 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/c4/a636e47772257fe685926441a4d619a1f51fb5 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/ba/7873df07ccf71da8983eddbd09044dc436567c ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/0e/3b4efb9cad03ad29e6dd9aa1d29fb5b5f6da89 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/5e/c915bb1b5236ad0bfbc781183bd17998e8bfc3 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/e5/f61514425ac83ff88fb5f82b1ec1aec99b1063 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/90/4bfcce33fd480be819d05e2f4aed143a4c98b1 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/98/ce8eb10cc444ec38457080a390aa221b6254bc ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/98/c7dff7bd8141a406c03ccffb5828f580924b57 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/9d/0cf47727c6cdd679bb2dbf20ccaa89167fd630 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/a0/3e065f16a5d7374d4b02c9946ab9fe3b84892b ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/81/cda67c0fc0115f47eb1a5bdffc9aa7b3ef7e12 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/b4/c09f97234c88b3656a4474c7d87093fe703019 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/fc/136618f262287be703a819cc264fd35c351893 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/fc/1cd72e10fb495eedc8df7d363f55ebc9592f21 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/1e/1ed044b923334de5376eaa1417e5c881a7a0d4 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/c0/6a3c9097ad8e0720970c422c3c7c2cc15260f6 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/be/72d3331724edabc8164bbb7defe765a58a0caa ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/dc/c2396f9e52098a6f9959ce00c47abaeb328616 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/6f/1b17b402805d35c3baa5413fe2bfcd27d5bf1f ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/da/618d5b251ed8d29ad9ebd57335d56651401074 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/da/c341452ce7172f804c126cc5dcf12374939f26 ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/objects/4a/506dc8e427f20532c24ccf947ad583d0c747bc ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/COMMIT_EDITMSG ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/index ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/description ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/refs/remotes/origin/master ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/.git/refs/heads/master ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/Test.txt ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/Notizen.odt ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/START.bat ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/liste/test_list.csv ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/liste/sutton.csv ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/liste/goe_bw.csv ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/picture_test.py ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/config.py ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/errors.log ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/main2.py ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc ist kaputt oder kein Bild.+
+10:57:38: /home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/doppelte_dateinamen.txt ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.+
+10:57:39: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.+
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:22:55: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:22:55: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:22:55: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:22:55: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:22:55: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:22:55: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:22:55: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:22:57: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:22:57: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:22:57: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:22:57: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:22:58: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:22:58: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:22:58: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:23:00: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:23:00: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:23:00: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:23:00: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:23:01: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:23:01: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:23:01: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+11:23:07: /home/user/bildarchiv_skript/main.py ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/README.txt ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/logs/HEAD ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/logs/refs/heads/master ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/HEAD ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/pre-receive.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/pre-applypatch.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/applypatch-msg.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/post-update.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/pre-rebase.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/pre-push.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/pre-merge-commit.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/pre-commit.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/update.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/commit-msg.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/prepare-commit-msg.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/hooks/fsmonitor-watchman.sample ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/info/exclude ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/packed-refs ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/config ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/4f/9295c6cc74e9346fc10268f0388402565b7629 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/7f/8a5f974140e567c557aacec08e5663b1a6e571 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/2f/7450289c87788108238c325cd916dc813e66b4 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/85/5aec78a8018179cbf7993eb13c620af27ad63e ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/e6/2dd228e3ab2b61ad4d77babd82fc36f046e740 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/f9/11eb50afa5df380333257ea2503c55acc464da ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/4b/a96e487088785ab141bd04d0f28fad86055fd1 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/cd/106226f6a346be40e7c3ddc93a7605e4f3b171 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/aa/8d599fd525f4263117ee8c6410f755c490ac79 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/ea/31c26ca559d91e1b89a953c2288f49d9929291 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/b7/911efa4119be2da3ef4b5839592b0dff5aa7fc ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/f5/3152142a662613c0debf93c62537bcabde7f73 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/01/40c337e384399f88bafa4f812f3a4bd16c3d5e ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/0a/29924d85629a46b16fc1b0aef7372698be39e7 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/24/5f8010df7bd5d5a8b5546158aa2b3a154349f5 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/57/3cf9565d27093a1068ae708a756cb1be0d6f17 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/37/5d08b60324068ab15a6051c5cb0f448a970d75 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/fa/e5df006b72e5bf9c11252dab716e313d2c3c0f ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/82/e7a280175f601f3dc054836b907cb02b9aace0 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/c1/8f9e284845402b066cf31a792717b26a7e2238 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/e3/c297c1d0fc1ede716f773300b3221200b5ec51 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/2d/929ecd07602b603507b06dfdf718e634402bf0 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/c4/a636e47772257fe685926441a4d619a1f51fb5 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/ba/7873df07ccf71da8983eddbd09044dc436567c ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/0e/3b4efb9cad03ad29e6dd9aa1d29fb5b5f6da89 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/5e/c915bb1b5236ad0bfbc781183bd17998e8bfc3 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/e5/f61514425ac83ff88fb5f82b1ec1aec99b1063 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/90/4bfcce33fd480be819d05e2f4aed143a4c98b1 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/98/ce8eb10cc444ec38457080a390aa221b6254bc ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/98/c7dff7bd8141a406c03ccffb5828f580924b57 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/9d/0cf47727c6cdd679bb2dbf20ccaa89167fd630 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/a0/3e065f16a5d7374d4b02c9946ab9fe3b84892b ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/81/cda67c0fc0115f47eb1a5bdffc9aa7b3ef7e12 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/b4/c09f97234c88b3656a4474c7d87093fe703019 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/fc/136618f262287be703a819cc264fd35c351893 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/fc/1cd72e10fb495eedc8df7d363f55ebc9592f21 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/1e/1ed044b923334de5376eaa1417e5c881a7a0d4 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/c0/6a3c9097ad8e0720970c422c3c7c2cc15260f6 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/be/72d3331724edabc8164bbb7defe765a58a0caa ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/dc/c2396f9e52098a6f9959ce00c47abaeb328616 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/6f/1b17b402805d35c3baa5413fe2bfcd27d5bf1f ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/da/618d5b251ed8d29ad9ebd57335d56651401074 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/da/c341452ce7172f804c126cc5dcf12374939f26 ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/objects/4a/506dc8e427f20532c24ccf947ad583d0c747bc ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/COMMIT_EDITMSG ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/index ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/description ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/refs/remotes/origin/master ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/.git/refs/heads/master ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/Test.txt ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/Notizen.odt ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/START.bat ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/liste/test_list.csv ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/liste/sutton.csv ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/liste/goe_bw.csv ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/picture_test.py ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/config.py ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/errors.log ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/main2.py ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/doppelte_dateinamen.txt ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:23:07: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:23:08: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:23:08: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:23:08: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:23:08: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+11:29:27: /home/user/bildarchiv_skript/main.py ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/README.txt ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/logs/HEAD ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/logs/refs/heads/master ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/HEAD ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/pre-receive.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/pre-applypatch.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/applypatch-msg.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/post-update.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/pre-rebase.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/pre-push.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/pre-merge-commit.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/pre-commit.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/update.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/commit-msg.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/prepare-commit-msg.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/hooks/fsmonitor-watchman.sample ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/info/exclude ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/packed-refs ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/config ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/4f/9295c6cc74e9346fc10268f0388402565b7629 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/7f/8a5f974140e567c557aacec08e5663b1a6e571 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/2f/7450289c87788108238c325cd916dc813e66b4 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/85/5aec78a8018179cbf7993eb13c620af27ad63e ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/e6/2dd228e3ab2b61ad4d77babd82fc36f046e740 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/f9/11eb50afa5df380333257ea2503c55acc464da ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/4b/a96e487088785ab141bd04d0f28fad86055fd1 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/cd/106226f6a346be40e7c3ddc93a7605e4f3b171 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/aa/8d599fd525f4263117ee8c6410f755c490ac79 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/ea/31c26ca559d91e1b89a953c2288f49d9929291 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/b7/911efa4119be2da3ef4b5839592b0dff5aa7fc ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/f5/3152142a662613c0debf93c62537bcabde7f73 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/01/40c337e384399f88bafa4f812f3a4bd16c3d5e ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/0a/29924d85629a46b16fc1b0aef7372698be39e7 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/24/5f8010df7bd5d5a8b5546158aa2b3a154349f5 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/57/3cf9565d27093a1068ae708a756cb1be0d6f17 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/37/5d08b60324068ab15a6051c5cb0f448a970d75 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/fa/e5df006b72e5bf9c11252dab716e313d2c3c0f ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/82/e7a280175f601f3dc054836b907cb02b9aace0 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/c1/8f9e284845402b066cf31a792717b26a7e2238 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/e3/c297c1d0fc1ede716f773300b3221200b5ec51 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/2d/929ecd07602b603507b06dfdf718e634402bf0 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/c4/a636e47772257fe685926441a4d619a1f51fb5 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/ba/7873df07ccf71da8983eddbd09044dc436567c ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/0e/3b4efb9cad03ad29e6dd9aa1d29fb5b5f6da89 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/5e/c915bb1b5236ad0bfbc781183bd17998e8bfc3 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/e5/f61514425ac83ff88fb5f82b1ec1aec99b1063 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/90/4bfcce33fd480be819d05e2f4aed143a4c98b1 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/98/ce8eb10cc444ec38457080a390aa221b6254bc ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/98/c7dff7bd8141a406c03ccffb5828f580924b57 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/9d/0cf47727c6cdd679bb2dbf20ccaa89167fd630 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/a0/3e065f16a5d7374d4b02c9946ab9fe3b84892b ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/81/cda67c0fc0115f47eb1a5bdffc9aa7b3ef7e12 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/b4/c09f97234c88b3656a4474c7d87093fe703019 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/fc/136618f262287be703a819cc264fd35c351893 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/fc/1cd72e10fb495eedc8df7d363f55ebc9592f21 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/1e/1ed044b923334de5376eaa1417e5c881a7a0d4 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/c0/6a3c9097ad8e0720970c422c3c7c2cc15260f6 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/be/72d3331724edabc8164bbb7defe765a58a0caa ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/dc/c2396f9e52098a6f9959ce00c47abaeb328616 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/6f/1b17b402805d35c3baa5413fe2bfcd27d5bf1f ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/da/618d5b251ed8d29ad9ebd57335d56651401074 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/da/c341452ce7172f804c126cc5dcf12374939f26 ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/objects/4a/506dc8e427f20532c24ccf947ad583d0c747bc ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/COMMIT_EDITMSG ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/index ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/description ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/refs/remotes/origin/master ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/.git/refs/heads/master ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/Test.txt ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/Notizen.odt ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/START.bat ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/liste/test_list.csv ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/liste/sutton.csv ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/liste/goe_bw.csv ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/picture_test.py ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/config.py ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/errors.log ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/main2.py ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/doppelte_dateinamen.txt ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:29:27: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:29:28: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:29:28: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:29:28: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+11:30:13: /home/user/bildarchiv_skript/main.py ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/README.txt ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/logs/HEAD ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/logs/refs/heads/master ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/HEAD ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/pre-receive.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/pre-applypatch.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/applypatch-msg.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/post-update.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/pre-rebase.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/pre-push.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/pre-merge-commit.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/pre-commit.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/update.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/commit-msg.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/prepare-commit-msg.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/hooks/fsmonitor-watchman.sample ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/info/exclude ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/packed-refs ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/config ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/4f/9295c6cc74e9346fc10268f0388402565b7629 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/7f/8a5f974140e567c557aacec08e5663b1a6e571 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/2f/7450289c87788108238c325cd916dc813e66b4 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/85/5aec78a8018179cbf7993eb13c620af27ad63e ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/e6/2dd228e3ab2b61ad4d77babd82fc36f046e740 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/f9/11eb50afa5df380333257ea2503c55acc464da ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/4b/a96e487088785ab141bd04d0f28fad86055fd1 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/cd/106226f6a346be40e7c3ddc93a7605e4f3b171 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/aa/8d599fd525f4263117ee8c6410f755c490ac79 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/ea/31c26ca559d91e1b89a953c2288f49d9929291 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/b7/911efa4119be2da3ef4b5839592b0dff5aa7fc ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/f5/3152142a662613c0debf93c62537bcabde7f73 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/01/40c337e384399f88bafa4f812f3a4bd16c3d5e ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/0a/29924d85629a46b16fc1b0aef7372698be39e7 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/24/5f8010df7bd5d5a8b5546158aa2b3a154349f5 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/57/3cf9565d27093a1068ae708a756cb1be0d6f17 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/37/5d08b60324068ab15a6051c5cb0f448a970d75 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/fa/e5df006b72e5bf9c11252dab716e313d2c3c0f ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/82/e7a280175f601f3dc054836b907cb02b9aace0 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/c1/8f9e284845402b066cf31a792717b26a7e2238 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/e3/c297c1d0fc1ede716f773300b3221200b5ec51 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/2d/929ecd07602b603507b06dfdf718e634402bf0 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/c4/a636e47772257fe685926441a4d619a1f51fb5 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/ba/7873df07ccf71da8983eddbd09044dc436567c ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/0e/3b4efb9cad03ad29e6dd9aa1d29fb5b5f6da89 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/5e/c915bb1b5236ad0bfbc781183bd17998e8bfc3 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/e5/f61514425ac83ff88fb5f82b1ec1aec99b1063 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/90/4bfcce33fd480be819d05e2f4aed143a4c98b1 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/98/ce8eb10cc444ec38457080a390aa221b6254bc ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/98/c7dff7bd8141a406c03ccffb5828f580924b57 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/9d/0cf47727c6cdd679bb2dbf20ccaa89167fd630 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/a0/3e065f16a5d7374d4b02c9946ab9fe3b84892b ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/81/cda67c0fc0115f47eb1a5bdffc9aa7b3ef7e12 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/b4/c09f97234c88b3656a4474c7d87093fe703019 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/fc/136618f262287be703a819cc264fd35c351893 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/fc/1cd72e10fb495eedc8df7d363f55ebc9592f21 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/1e/1ed044b923334de5376eaa1417e5c881a7a0d4 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/c0/6a3c9097ad8e0720970c422c3c7c2cc15260f6 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/be/72d3331724edabc8164bbb7defe765a58a0caa ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/dc/c2396f9e52098a6f9959ce00c47abaeb328616 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/6f/1b17b402805d35c3baa5413fe2bfcd27d5bf1f ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/da/618d5b251ed8d29ad9ebd57335d56651401074 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/da/c341452ce7172f804c126cc5dcf12374939f26 ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/objects/4a/506dc8e427f20532c24ccf947ad583d0c747bc ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/COMMIT_EDITMSG ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/index ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/description ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/refs/remotes/origin/master ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/.git/refs/heads/master ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/Test.txt ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/Notizen.odt ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/START.bat ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/liste/test_list.csv ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/liste/sutton.csv ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/liste/goe_bw.csv ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/picture_test.py ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/config.py ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/errors.log ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/main2.py ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/doppelte_dateinamen.txt ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:30:13: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:30:14: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:30:14: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:30:14: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:30:46: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:30:46: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:30:46: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:30:46: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:30:46: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:30:46: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:30:46: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:49:39: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:49:39: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:49:39: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:49:39: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:49:39: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:49:39: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:49:39: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:54:24: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:54:24: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:54:24: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:54:24: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:54:24: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:54:24: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:54:24: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:55:45: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:55:45: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:55:45: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:55:45: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:55:45: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:55:45: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:55:45: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+11:58:03: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+11:58:03: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+11:58:03: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+11:58:03: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+11:58:03: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+11:58:03: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+11:58:04: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+12:13:08: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+12:13:08: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+12:13:08: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+12:13:08: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+12:13:08: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+12:13:08: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+12:13:08: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+12:13:29: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+12:13:29: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+12:13:29: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+12:13:29: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+12:13:29: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+12:13:29: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+12:13:29: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+12:53:18: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+12:53:18: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+12:53:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+12:53:18: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+12:53:18: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+12:53:18: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+12:53:18: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+12:53:30: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+12:53:30: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+12:53:30: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+12:53:30: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+12:53:30: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+12:53:30: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+12:53:30: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+12:53:37: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+12:53:37: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+12:53:37: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+12:53:38: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+12:53:38: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+12:53:38: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+12:53:38: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+Keine Fehler gefunden!
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+13:44:10: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+13:44:10: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+13:44:10: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+13:44:10: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+13:44:10: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+13:44:10: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+13:44:10: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+14:23:30: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+14:23:30: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+14:23:30: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+14:23:30: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+14:23:31: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+14:23:31: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+14:23:31: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+14:23:34: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+14:23:34: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+14:23:34: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+14:23:34: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+14:23:34: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+14:23:34: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+14:23:35: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.
+
+ ----- 04.05.2022 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+14:33:22: /home/user/bildarchiv_skript/alle_bilder/test/truncated_2.JPG ist kaputt oder kein Bild.
+14:33:22: /home/user/bildarchiv_skript/alle_bilder/doppelt.md ist kaputt oder kein Bild.
+14:33:22: /home/user/bildarchiv_skript/alle_bilder/truncated_1.png ist kaputt oder kein Bild.
+14:33:22: /home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG ist kaputt oder kein Bild.
+14:33:23: /home/user/bildarchiv_skript/alle_bilder/kaputt.md ist kaputt oder kein Bild.
+14:33:23: /home/user/bildarchiv_skript/alle_bilder/doppelt.txt ist kaputt oder kein Bild.
+14:33:23: /home/user/bildarchiv_skript/alle_bilder/unsinn.xml ist kaputt oder kein Bild.

@@ -1,4 +1,983 @@
 Diese dateinamen gibt es doppelt!: 
 doppelt.md  doppelt.txt  
 truncated_1.png  truncated_1.JPG  
-00.png  00.jpg  
+00.png  00.jpg
+
+ ----- 03.05.2022, 17:03:22 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 03.05.2022, 17:05:10 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 03.05.2022, 17:16:55 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 03.05.2022, 17:20:24 ----- 
+ +++ Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder +++
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 03.05.2022, 17:23:25 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 03.05.2022, 17:27:33 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 03.05.2022, 17:31:54 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 09:07:13 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 09:13:00 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 09:13:19 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 09:13:36 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 09:34:44 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 09:35:39 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:02:19 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:06:03 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:09:02 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:11:22 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:13:07 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:27:19 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:28:21 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:32:49 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:33:44 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:34:35 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:36:33 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:37:44 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:42:10 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:42:46 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:43:27 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:44:19 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:51:40 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:52:38 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 10:57:39 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+Gefundene Duplikate:
+ID: main
+/home/user/bildarchiv_skript/main.py
+/home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc
+
+ID: HEAD
+/home/user/bildarchiv_skript/.git/logs/HEAD
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD
+/home/user/bildarchiv_skript/.git/HEAD
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD
+
+ID: master
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/logs/refs/heads/master
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/refs/heads/master
+
+ID: config
+/home/user/bildarchiv_skript/.git/config
+/home/user/bildarchiv_skript/config.py
+/home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc
+/home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc
+
+ID: picture_test
+/home/user/bildarchiv_skript/picture_test.py
+/home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc
+
+ID: existiert_bereits
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/existiert_bereits.png
+/home/user/bildarchiv_skript/alle_bilder/existiert_bereits.png
+
+ID: in_der_liste
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/in_der_liste.png
+/home/user/bildarchiv_skript/alle_bilder/in_der_liste.png
+
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 11:22:55 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:22:58 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:23:01 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:23:08 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+Gefundene Duplikate:
+ID: main
+/home/user/bildarchiv_skript/main.py
+/home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc
+
+ID: HEAD
+/home/user/bildarchiv_skript/.git/logs/HEAD
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD
+/home/user/bildarchiv_skript/.git/HEAD
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD
+
+ID: master
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/logs/refs/heads/master
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/refs/heads/master
+
+ID: config
+/home/user/bildarchiv_skript/.git/config
+/home/user/bildarchiv_skript/config.py
+/home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc
+/home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc
+
+ID: picture_test
+/home/user/bildarchiv_skript/picture_test.py
+/home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc
+
+ID: existiert_bereits
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/existiert_bereits.png
+/home/user/bildarchiv_skript/alle_bilder/existiert_bereits.png
+
+ID: in_der_liste
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/in_der_liste.png
+/home/user/bildarchiv_skript/alle_bilder/in_der_liste.png
+
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:29:28 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+Gefundene Duplikate:
+ID: main
+/home/user/bildarchiv_skript/main.py
+/home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc
+
+ID: HEAD
+/home/user/bildarchiv_skript/.git/logs/HEAD
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD
+/home/user/bildarchiv_skript/.git/HEAD
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD
+
+ID: master
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/logs/refs/heads/master
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/refs/heads/master
+
+ID: config
+/home/user/bildarchiv_skript/.git/config
+/home/user/bildarchiv_skript/config.py
+/home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc
+/home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc
+
+ID: picture_test
+/home/user/bildarchiv_skript/picture_test.py
+/home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc
+
+ID: existiert_bereits
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/existiert_bereits.png
+/home/user/bildarchiv_skript/alle_bilder/existiert_bereits.png
+
+ID: in_der_liste
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/in_der_liste.png
+/home/user/bildarchiv_skript/alle_bilder/in_der_liste.png
+
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:30:14 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript
+------------------------------
+Gefundene Duplikate:
+ID: main
+/home/user/bildarchiv_skript/main.py
+/home/user/bildarchiv_skript/__pycache__/main.cpython-310.pyc
+
+ID: HEAD
+/home/user/bildarchiv_skript/.git/logs/HEAD
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/HEAD
+/home/user/bildarchiv_skript/.git/HEAD
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/HEAD
+
+ID: master
+/home/user/bildarchiv_skript/.git/logs/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/logs/refs/heads/master
+/home/user/bildarchiv_skript/.git/refs/remotes/origin/master
+/home/user/bildarchiv_skript/.git/refs/heads/master
+
+ID: config
+/home/user/bildarchiv_skript/.git/config
+/home/user/bildarchiv_skript/config.py
+/home/user/bildarchiv_skript/__pycache__/config.cpython-38.pyc
+/home/user/bildarchiv_skript/__pycache__/config.cpython-310.pyc
+
+ID: picture_test
+/home/user/bildarchiv_skript/picture_test.py
+/home/user/bildarchiv_skript/__pycache__/picture_test.cpython-38.pyc
+
+ID: existiert_bereits
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/existiert_bereits.png
+/home/user/bildarchiv_skript/alle_bilder/existiert_bereits.png
+
+ID: in_der_liste
+/home/user/bildarchiv_skript/ausgewaehlte_bilder/in_der_liste.png
+/home/user/bildarchiv_skript/alle_bilder/in_der_liste.png
+
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:30:46 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:42:42 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+Gefundene Duplikate:Keine
+
+
+ ----- 04.05.2022, 11:48:56 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+Gefundene Duplikate:Keine
+
+
+ ----- 04.05.2022, 11:49:13 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+Gefundene Duplikate: Keine
+
+ ----- 04.05.2022, 11:49:39 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+
+ ----- 04.05.2022, 11:54:24 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 11:55:45 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 11:58:04 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 11:58:21 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/ausgewaehlte_bilder
+------------------------------
+Gefundene Duplikate: Keine
+ ----- 04.05.2022, 12:13:08 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 12:13:14 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 12:53:18 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 12:53:30 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 12:53:38 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 14:23:23 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 14:23:35 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
+
+ ----- 04.05.2022, 14:33:23 ----- 
+Quell-Ordner:   /home/user/bildarchiv_skript/alle_bilder
+------------------------------
+Gefundene Duplikate:
+ID: doppelt
+/home/user/bildarchiv_skript/alle_bilder/doppelt.md
+/home/user/bildarchiv_skript/alle_bilder/doppelt.txt
+
+ID: truncated_1
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.png
+/home/user/bildarchiv_skript/alle_bilder/truncated_1.JPG
+
+ID: 00
+/home/user/bildarchiv_skript/alle_bilder/00.png
+/home/user/bildarchiv_skript/alle_bilder/00.jpg
