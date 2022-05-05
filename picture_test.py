@@ -69,6 +69,7 @@ def start_test(source_folder):     # create_non_global_result_list
             with open(error_log,"a") as logfile:
                 logfile.write(f"Keine Fehler gefunden!\n")
     if check_for_duplicates_is_selected:
+        result_list.append("\n\n\n")
         search_duplicates(source_folder, result_list)
     return result_list
 
@@ -136,23 +137,27 @@ def fill_filelist_for_duplicates(filename, file_path):
         duplicate_file_names[id] = [file_path]
 
 def search_duplicates(source_folder, result_list):
-    duplicates = f"\n ----- {make_timestamp('all')} ----- \nQuell-Ordner:   {source_folder}\n------------------------------\nGefundene Duplikate:"
+    duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate:"
     duplicates += check_for_duplicated_files()
     result_list.append(duplicates)
+    duplicates += "\n\n\n\n"
     save_duplicates_log(duplicates)
-    return result_list
 
 def check_for_duplicated_files():
     global duplicated_files
     search_result = ""
     for key, values in duplicate_file_names.items():
         if len(values) > 1:
-            search_result += (f"\nID: {key}\n")
+            search_result += (f"\n\nDateiname: {key}\n")
             duplicated_files += 1
+            i = 1
             for value in values:
-                search_result += (f"{value}\n")
+                if i > 1:
+                    search_result += (f"\n")
+                i += 1
+                search_result += (f"{value}")
     if search_result == "":
-        search_result += " Keine\n"
+        search_result += " \nKeine"
     return search_result
 
 def save_duplicates_log(duplicates):

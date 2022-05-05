@@ -3,6 +3,7 @@ from faulthandler import disable
 import tkinter as tk
 from tkinter import DISABLED, Toplevel, messagebox, BooleanVar, filedialog as tkfd
 import picture_test
+import os
 
 source_folder = ""
 is_running = False
@@ -21,12 +22,21 @@ def open_log_settings_window():
 
     lsw_label_error_path = tk.Label(log_settings_window, text="Datei-Pfad der Fehler-Logdatei:\n"+picture_test.error_log)
     lsw_label_error_path.grid(row=0, column=0, pady=10, padx=10)
+    lsw_label_error_path.bind('<Double-1>', double_click_error)
 
     lsw_label_duplicates_path = tk.Label(log_settings_window, text="Datei-Pfad der Duplikaten-Logdatei:\n"+picture_test.duplicates_log)
     lsw_label_duplicates_path.grid(row=1, column=0, pady=10, padx=10)
+    lsw_label_duplicates_path.bind('<Double-1>', double_click_duplicates)
 
     #log_settings_window_test_btn = tk.Button(log_settings_window, text="Test", command=select_source_folder)
     #log_settings_window_test_btn.grid(row=2, column=0)
+
+def double_click_error(event):
+    #os.open()
+    print("DC ERROR")
+
+def double_click_duplicates(event):
+    print("DC DUPLICATES")
 
 def append_text_in_textbox(additional_text: str, with_timestamp = False):
     additional_text = f"{additional_text}\n"
@@ -49,6 +59,7 @@ def write_result_in_textbox():
     list_result = picture_test.start_test(source_folder)
     text_box_info.tag_config("OK",background="#CCFFCC")
     text_box_info.tag_config("KAPUTT",background="#FFCCCC")
+    text_box_info.tag_config("DUPLICATE",background="#DDDDFF")
     for list_entry in list_result:
         if "ist OK!" in list_entry:
             text_box_info.insert(tk.END, f"{list_entry}\n", "OK")
@@ -58,6 +69,8 @@ def write_result_in_textbox():
             text_box_info.insert(tk.END, f"{list_entry}\n", "KAPUTT")
         elif "ist trunkiert" in list_entry:
             text_box_info.insert(tk.END, f"{list_entry}\n", "KAPUTT")
+        elif "------------------------" in list_entry:
+            text_box_info.insert(tk.END, f"{list_entry}\n", "DUPLICATE")
         else:
             append_text_in_textbox(f"{list_entry}")
     append_text_in_textbox("----- STOP! -----",True)
@@ -93,7 +106,7 @@ def press_start():
         pass
 
 root = tk.Tk()
-root.title("Datei prüfen")
+root.title("Dafen22")
 
 root.protocol("WM_DELETE_WINDOW", close_programm)
 
