@@ -156,10 +156,10 @@ button_control_start.grid(row=2, column=0, pady=8, sticky=tk.S)
 frame_input = tk.LabelFrame(root)
 frame_input.grid(row=1, column=2, sticky=tk.N + tk.S)
 
-label_input = tk.Label(frame_input, text="Quell-Datein", bg="#bbbbbb", height=3, width=30)
+label_input = tk.Label(frame_input, text="Quell-Dateien", bg="#bbbbbb", height=3, width=30)
 label_input.grid(row=0, column=0, columnspan=2)
 
-label_input_files = tk.Label(frame_input, text="Datein im Quell-Ordner: ")
+label_input_files = tk.Label(frame_input, text="Dateien im Quell-Ordner: ")
 label_input_files.grid(row=1, column=0)
 
 label_input_files_number = tk.Label(frame_input, text="0")
