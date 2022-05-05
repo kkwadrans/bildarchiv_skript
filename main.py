@@ -103,7 +103,7 @@ check_duplicates = BooleanVar()
 label_source_path = tk.Label(root, text="- kein Quell-Ordner gewählt -")
 label_source_path.grid(row=0, column=0, columnspan=3)
 
-
+"""
 # +++ MENUBAR +++
 menubar = tk.Menu(root)
 
@@ -114,7 +114,7 @@ menu_bar.add_command(label="Beenden", command=close_programm)
 menubar.add_cascade(label="Menü", menu=menu_bar)
 
 root.config(menu=menubar)
-
+"""
 
 # +++ CONTROL +++
 frame_control = tk.LabelFrame(root)
@@ -149,7 +149,7 @@ checkbutton_control_select_file_test.grid()
 
 # +++ BUTTONS +++
 button_control_start = tk.Button(root, text="START", command=press_start, font=("arial", 14), height=2, width=14)
-button_control_start.grid(row=2, column=0, pady=8, sticky=tk.S)
+button_control_start.grid(row=3, column=0, pady=8, sticky=tk.S)
 
 
 # +++ INPUT +++
@@ -206,9 +206,19 @@ label_result_duplicates_number = tk.Label(frame_result_right, text="0")
 label_result_duplicates_number.grid()
 
 
+# +++ LOG +++
+frame_log = tk.LabelFrame(root)
+frame_log.grid(row=3, column=2, sticky=tk.N + tk.S + tk.E + tk.W)
+frame_log.rowconfigure(0, weight=1)
+frame_log.columnconfigure(0, weight=1)
+
+button_log = tk.Button(frame_log, text="Log Info", command=open_log_settings_window, font=("arial", 12), height=2, width=8)
+button_log.grid(row=1, column=0, pady=16, padx=16)
+
+
 # +++ INFO +++
 frame_info = tk.LabelFrame(root)
-frame_info.grid(row=1, column=1, rowspan=2, sticky=tk.N)
+frame_info.grid(row=1, column=1, rowspan=3, sticky=tk.N)
 
 scroll_info = tk.Scrollbar(frame_info, orient="vertical")
 
