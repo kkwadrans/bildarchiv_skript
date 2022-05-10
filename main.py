@@ -1,6 +1,6 @@
 #from faulthandler import disable
 from faulthandler import disable
-from signal import pause
+#from signal import pause
 import tkinter as tk
 from tkinter import DISABLED, Toplevel, messagebox, BooleanVar, filedialog as tkfd
 import picture_test
