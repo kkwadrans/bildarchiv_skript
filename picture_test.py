@@ -69,7 +69,8 @@ def start_test(source_folder):     # create_non_global_result_list
             with open(error_log,"a") as logfile:
                 logfile.write(f"Keine Fehler gefunden!\n")
     if check_for_duplicates_is_selected:
-        result_list.append("\n\n\n")
+        if check_for_errors_is_selected:
+             result_list.append("\n\n\n")
         search_duplicates(source_folder, result_list)
     return result_list
 
