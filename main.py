@@ -1,69 +1,61 @@
-#from faulthandler import disable
-from faulthandler import disable
-#from signal import pause
 import tkinter as tk
 from tkinter import DISABLED, Toplevel, messagebox, BooleanVar, filedialog as tkfd
 import picture_test
 import os
-import threading
+
+# Bild prüfung
+# https://pypi.org/project/ImageLite/0.1/#description
+
+#print(frame_result.winfo_reqwidth())   # frame-breite auslesen
+#print(len(lsw_label_error_path.cget("text")))  # label-text auslesen
+
+MAX_LOG_PATH_WIDTH = 28
 
 source_folder = ""
 is_running = False
-log_show = 2
+
+def split_log_file_path_label(log_path):
+    log_splitlist = log_path.split("/")
+    log_splitlist.pop(0)
+
+    new_log_path:str = ""
+    new_log_path_current_row_length = 0
+
+    for i in log_splitlist:
+        if (new_log_path_current_row_length + len(i)) <= MAX_LOG_PATH_WIDTH:
+            new_log_path_current_row_length += len(i)
+            new_log_path += "/"
+            new_log_path += i
+        else:
+            new_log_path_current_row_length = len(i)
+            new_log_path += "/\n"
+            new_log_path += i
+    return new_log_path
+
+new_error_log_path = split_log_file_path_label(os.getcwd() + "/" + picture_test.error_log)
+new_duplicates_log_path = split_log_file_path_label(os.getcwd() + "/" + picture_test.duplicates_log)
 
 def close_programm():
-    msgbox = messagebox.askquestion("Programm beenden", "Programm wirklich beenden?")
+    msgbox = messagebox.askquestion("Programm beenden", "Dafen22 wirklich beenden?")
     if msgbox == "yes":
         root.destroy()
 
-def open_log_settings_window():
-    log_settings_window = Toplevel(root)
-    log_settings_window.title("Log-Datein")
-    log_settings_window.grab_set()
-    log_settings_window.wm_attributes("-topmost", 1)
-
-    lsw_label_error_path = tk.Label(log_settings_window, text="Datei-Pfad der Fehler-Logdatei:\n" + os.getcwd() + "/" + picture_test.error_log)
-    lsw_label_error_path.grid(row=0, column=0, pady=10, padx=10)
-    lsw_label_error_path.bind('<Double-1>', lambda event, window=log_settings_window, log_file=picture_test.error_log: double_click_log(event, window, log_file))
-
-    lsw_label_duplicates_path = tk.Label(log_settings_window, text="Datei-Pfad der Duplikaten-Logdatei:\n" + os.getcwd() + "/" + picture_test.duplicates_log)
-    lsw_label_duplicates_path.grid(row=1, column=0, pady=10, padx=10)
-    lsw_label_duplicates_path.bind('<Double-1>', lambda event, window=log_settings_window, log_file=picture_test.duplicates_log: double_click_log(event, window, log_file))
-
-    #log_settings_window_test_btn = tk.Button(log_settings_window, text="Test", command=select_source_folder)
-    #log_settings_window_test_btn.grid(row=2, column=0)
-
-def double_click_log(event, window, log_file):
-    window.destroy()
-    if log_show == 1:
-        thread_log_in_texteditor = threading.Thread(target=open_log_in_texteditor, args=(log_file,))
-        thread_log_in_texteditor.start()
-        # neuer Thread verhindert einfrieren des Programms
-    elif log_show == 2:
-        log_show_window = Toplevel(root)
-        log_show_window.title(log_file)
-        log_show_window.rowconfigure(0, weight=1)
-        log_show_window.columnconfigure(0, weight=1)
-        #log_show_window.grab_set()
-        #log_show_window.wm_attributes("-topmost", 1)
-        
-        scroll_log = tk.Scrollbar(log_show_window, orient="vertical")
-        textbox_log = tk.Text(log_show_window, yscrollcommand=scroll_log.set, height=40, width=140, state="normal")
-        textbox_log.grid(sticky=tk.N + tk.E + tk.S + tk.W)
-        scroll_log.config(command=textbox_log.yview)
-        scroll_log.grid(row=0, column=1, sticky=tk.N + tk.S)
-        log_file_text = open(log_file, "r")
-        textbox_log.insert(tk.END, log_file_text.read())
-        textbox_log.config(state="disabled")
-        textbox_log.rowconfigure(0, weight=1)
-        textbox_log.columnconfigure(0, weight=1)
-
-def open_log_in_texteditor(log_file):
-    if os.name == "posix":
-        os.system("xed " + os.getcwd() + "/" + log_file)
-    elif os.name == "nt":
-        pass
-    #TODO anpassen für Windows
+def double_click_log(event, log_file):
+    log_show_window = Toplevel(root)
+    log_show_window.title(log_file)
+    log_show_window.rowconfigure(0, weight=1)
+    log_show_window.columnconfigure(0, weight=1)
+    
+    scroll_log = tk.Scrollbar(log_show_window, orient="vertical")
+    textbox_log = tk.Text(log_show_window, yscrollcommand=scroll_log.set, height=40, width=140, state="normal")
+    textbox_log.grid(sticky=tk.N + tk.E + tk.S + tk.W)
+    scroll_log.config(command=textbox_log.yview)
+    scroll_log.grid(row=0, column=1, sticky=tk.N + tk.S)
+    log_file_text = open(log_file, "r")
+    textbox_log.insert(tk.END, log_file_text.read())
+    textbox_log.config(state="disabled")
+    textbox_log.rowconfigure(0, weight=1)
+    textbox_log.columnconfigure(0, weight=1)
 
 def append_text_in_textbox(additional_text: str, with_timestamp = False):
     additional_text = f"{additional_text}\n"
@@ -73,7 +65,7 @@ def append_text_in_textbox(additional_text: str, with_timestamp = False):
 
 def select_source_folder():
     global source_folder
-    selected_folder = tkfd.askdirectory()
+    selected_folder = str(tkfd.askdirectory())
     #print(selected_folder)
     if selected_folder != "":
         source_folder = selected_folder
@@ -103,7 +95,7 @@ def write_result_in_textbox():
             text_box_info.insert(tk.END, f"{list_entry}\n", "DUPLICATE")
         else:
             append_text_in_textbox(f"{list_entry}")
-    append_text_in_textbox("----- STOP! -----",True)
+    append_text_in_textbox("----- FERTIG! -----",True)
     text_box_info.config(state="disabled")
 
 def show_file_count_result_on_gui():
@@ -253,13 +245,21 @@ label_result_duplicates_number.grid()
 
 
 # +++ LOG +++
-frame_log = tk.LabelFrame(root)
+frame_log = tk.LabelFrame(root,)
 frame_log.grid(row=3, column=2, sticky=tk.N + tk.S + tk.E + tk.W)
 frame_log.rowconfigure(0, weight=1)
 frame_log.columnconfigure(0, weight=1)
 
-button_log = tk.Button(frame_log, text="Log Info", command=open_log_settings_window, font=("arial", 12), height=2, width=8)
-button_log.grid(row=1, column=0, pady=16, padx=16)
+label_log = tk.Label(frame_log, text="Log-Datein", bg="#bbbbbb", height=3, width=30)
+label_log.grid(row=0, column=0, sticky=tk.N)
+
+lsw_label_error_path = tk.Label(frame_log, text="Datei-Pfad der Fehler-Logdatei:\n" + new_error_log_path, fg="blue")
+lsw_label_error_path.grid(row=1, column=0, pady=10, padx=2)
+lsw_label_error_path.bind('<Double-1>', lambda event, log_file=picture_test.error_log: double_click_log(event, log_file))
+
+lsw_label_duplicates_path = tk.Label(frame_log, text="Datei-Pfad der Duplikaten-Logdatei:\n" + new_duplicates_log_path, fg="blue")
+lsw_label_duplicates_path.grid(row=2, column=0, pady=10, padx=2)
+lsw_label_duplicates_path.bind('<Double-1>', lambda event, log_file=picture_test.duplicates_log: double_click_log(event, log_file))
 
 # TEST --------------------------------------------
 def test(event):
@@ -281,7 +281,7 @@ frame_info.grid(row=1, column=1, rowspan=3, sticky=tk.N)
 
 scroll_info = tk.Scrollbar(frame_info, orient="vertical")
 
-text_box_info = tk.Text(frame_info, yscrollcommand=scroll_info.set, height=40, width=140, state="disabled")
+text_box_info = tk.Text(frame_info, yscrollcommand=scroll_info.set, height=50, width=140, state="disabled")
 text_box_info.grid(row=0, column=0)
 
 scroll_info.config(command=text_box_info.yview)

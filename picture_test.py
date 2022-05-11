@@ -69,7 +69,8 @@ def start_test(source_folder):     # create_non_global_result_list
             with open(error_log,"a") as logfile:
                 logfile.write(f"Keine Fehler gefunden!\n")
     if check_for_duplicates_is_selected:
-        result_list.append("\n\n\n")
+        if check_for_errors_is_selected:
+            result_list.append("\n\n\n")
         search_duplicates(source_folder, result_list)
     return result_list
 
@@ -83,20 +84,24 @@ def scan_source_folder(source_folder, list_result: list):
             list_result = scan_source_folder(file_path, list_result)
         else:
             if check_for_errors_is_selected:
-                try:
-                    get_hash_value(file_path)
-                    check_if_image_is_broken(file_path)
-                    list_result.append(f"{make_timestamp('time')} : {file_path} ist OK!")
-                    files_ok += 1
-                except (UnidentifiedImageError) as e:
-                    list_result.append(f"{make_timestamp('time')} : {e}")
-                    handleError(e)
-                except (OSError) as e:
-                    list_result.append(f"{make_timestamp('time')} : {e}")
-                    handleError(e)
+                if check_file_extension(file_path):
+                    try:
+                        get_hash_value(file_path)
+                        check_if_image_is_broken(file_path)
+                        list_result.append(f"{make_timestamp('time')} : {file_path} ist OK!")
+                        files_ok += 1
+                    except (UnidentifiedImageError) as e:
+                        list_result.append(f"{make_timestamp('time')} : {e}")
+                        handleError(e)
+                    except (OSError) as e:
+                        list_result.append(f"{make_timestamp('time')} : {e}")
+                        handleError(e) 
             if check_for_duplicates_is_selected:
                     fill_filelist_for_duplicates(filename, file_path)
     return list_result
+
+def check_file_extension(file_path):
+    return file_path.lower().endswith(('.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.gif'))
 
 def get_hash_value(file_path): #compute checksum. here 'truncated image' exception (OS error) can occure
     try:
