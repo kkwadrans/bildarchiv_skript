@@ -1,5 +1,5 @@
 import config
-import csv
+from queue import Queue
 import os
 import hashlib
 from PIL import Image, UnidentifiedImageError
@@ -13,14 +13,18 @@ check_for_errors_is_selected = False
 check_for_duplicates_is_selected = False
 file_counter = 0
 files_ok = 0
+no_image_files = 0
 hash_errors = 0
 corrupted_files = 0
 duplicated_files = 0
 duplicate_file_names = {}
 
+infobox_queue = Queue()
+
 def reset_stats():
     global file_counter
     global files_ok
+    global no_image_files
     global hash_errors
     global corrupted_files
     global duplicated_files
@@ -28,6 +32,7 @@ def reset_stats():
 
     file_counter = 0
     files_ok = 0
+    no_image_files = 0
     hash_errors = 0
     corrupted_files = 0
     duplicated_files = 0
@@ -76,6 +81,7 @@ def start_test(source_folder):     # create_non_global_result_list
 
 def scan_source_folder(source_folder, list_result: list):
     global files_ok
+    global no_image_files
     global check_for_errors_is_selected
     global check_for_duplicates_is_selected
     for filename in os.listdir(source_folder):
@@ -83,21 +89,26 @@ def scan_source_folder(source_folder, list_result: list):
         if os.path.isdir(file_path):
             list_result = scan_source_folder(file_path, list_result)
         else:
-            if check_for_errors_is_selected:
-                if check_file_extension(file_path):
+            if check_file_extension(file_path):
+                if check_for_errors_is_selected:
                     try:
                         get_hash_value(file_path)
                         check_if_image_is_broken(file_path)
-                        list_result.append(f"{make_timestamp('time')} : {file_path} ist OK!")
+                        infobox_queue.put(f"{make_timestamp('time')} : {file_path} ist OK!")
+                        #list_result.append(f"{make_timestamp('time')} : {file_path} ist OK!")
                         files_ok += 1
                     except (UnidentifiedImageError) as e:
-                        list_result.append(f"{make_timestamp('time')} : {e}")
+                        infobox_queue.put(f"{make_timestamp('time')} : {e}")
+                        #list_result.append(f"{make_timestamp('time')} : {e}")
                         handleError(e)
                     except (OSError) as e:
-                        list_result.append(f"{make_timestamp('time')} : {e}")
-                        handleError(e) 
-            if check_for_duplicates_is_selected:
+                        infobox_queue.put(f"{make_timestamp('time')} : {e}")
+                        #list_result.append(f"{make_timestamp('time')} : {e}")
+                        handleError(e)
+                if check_for_duplicates_is_selected:
                     fill_filelist_for_duplicates(filename, file_path)
+            else:
+                    no_image_files += 1
     return list_result
 
 def check_file_extension(file_path):
