@@ -69,10 +69,11 @@ def check_file_count(source_folder, with_subfolders = True):
 
 def start_test(source_folder):     # create_non_global_result_list
     result_list = []
-    result_list = scan_source_folder(source_folder, result_list)
     if check_for_errors_is_selected:
         with open(error_log,"a") as logfile:
             logfile.write(f"\n ----- {make_timestamp('date')} ----- \nQuell-Ordner:   {source_folder}\n------------------------------\n")
+    result_list = scan_source_folder(source_folder, result_list)
+    if check_for_errors_is_selected:
         if hash_errors == 0 and corrupted_files == 0:
             with open(error_log,"a") as logfile:
                 logfile.write(f"Keine Fehler gefunden!\n")
@@ -170,8 +171,10 @@ def fill_filelist_for_duplicates(filename, file_path):
             duplicate_file_names[id] = [file_path]
 
 def search_duplicates(source_folder, result_list):
-    duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate:"
-    duplicates += check_for_duplicated_files()
+    global duplicated_files
+    duplicate_search_result = check_for_duplicated_files()
+    duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate: {duplicated_files}"
+    duplicates += duplicate_search_result
     infobox_queue.put(duplicates)
     #result_list.append(duplicates)
     duplicates += "\n\n\n\n"

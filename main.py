@@ -80,6 +80,7 @@ class DafenGui(tk.Frame):
                 #self.label_result_corrupted_files_number.config(text=picture_test.corrupted_files_queue.get())
                 #self.append_text_in_textbox(picture_test.infobox_queue.get(), False)
         else:
+            self.label_result_duplicates_number.config(text=f"{picture_test.duplicated_files}")
             self.append_text_in_textbox("----- FERTIG! -----",True)
             self.text_box_info.config(state="disabled")
             self.is_running = False
