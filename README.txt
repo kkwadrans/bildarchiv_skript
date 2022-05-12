@@ -6,6 +6,7 @@ Python 3.5 oder höhere Version installieren, dabei die Option "Add Python to PA
 Schritt 2:
 In den Terminal eingeben: 
 pip install pillow
+pip install tk
 
 Schritt 3: 
 in config.py überprüfen, ob richtige Infos angegeben sind (Input-Ordner, Output-Ordner, Liste)
