@@ -1,7 +1,7 @@
 import tkinter as tk
-from tkinter import CENTER, DISABLED, N, Toplevel, messagebox, BooleanVar, filedialog as tkfd
 import picture_test
 import os
+from tkinter import CENTER, DISABLED, N, Toplevel, messagebox, BooleanVar, filedialog as tkfd
 from queue import Queue
 from threading import Thread
 
@@ -34,7 +34,13 @@ class DafenGui(tk.Frame):
         self.get_splited_log_paths()
         self.create_widgets()
 
-    def get_queue_info(self):
+    def close_programm(self):
+        msgbox = messagebox.askquestion("Programm beenden", "Dafen22 wirklich beenden?")
+        if msgbox == "yes":
+            picture_test.continue_work = False
+            self.master.destroy()
+
+    def get_queue_content(self):
         if self.t1.is_alive() or not picture_test.infobox_queue.empty():
             if picture_test.infobox_queue.qsize() > 100:
                 queue_read_speed = 5
@@ -48,9 +54,9 @@ class DafenGui(tk.Frame):
                 queue_read_speed = 50
             else:
                 queue_read_speed = 100
-            self.master.after(queue_read_speed, self.get_queue_info)
+            self.master.after(queue_read_speed, self.get_queue_content)
             #print(picture_test.infobox_queue.qsize())
-            if not picture_test.infobox_queue.empty():
+            while not picture_test.infobox_queue.empty():
                 self.text_box_info.tag_config("OK",background="#88FFAA")
                 self.text_box_info.tag_config("NOIMAGE",background="#FFFFAA")
                 self.text_box_info.tag_config("BROKEN",background="#FFAAAA")
@@ -106,12 +112,6 @@ class DafenGui(tk.Frame):
         self.new_error_log_path = self.split_log_file_path_label(os.getcwd() + self.os_path_splitter + picture_test.error_log)
         self.new_duplicates_log_path = self.split_log_file_path_label(os.getcwd() + self.os_path_splitter + picture_test.duplicates_log)
 
-    def close_programm(self):
-        msgbox = messagebox.askquestion("Programm beenden", "Dafen22 wirklich beenden?")
-        if msgbox == "yes":
-            picture_test.continue_work = False
-            self.master.destroy()
-
     def double_click_log(self, event, log_file):
         self.log_show_window = Toplevel(self)
         self.log_show_window.title(log_file)
@@ -151,12 +151,12 @@ class DafenGui(tk.Frame):
 
         self.t1 = Thread(target=picture_test.start_test, args=(self.source_folder,))
         self.t1.start()
-        self.get_queue_info()
+        self.get_queue_content()
 
         #self.list_result = picture_test.start_test(self.source_folder)
-        self.text_box_info.tag_config("OK",background="#CCFFCC")
-        self.text_box_info.tag_config("KAPUTT",background="#FFCCCC")
-        self.text_box_info.tag_config("DUPLICATE",background="#DDDDFF")
+        #self.text_box_info.tag_config("OK",background="#CCFFCC")
+        #self.text_box_info.tag_config("KAPUTT",background="#FFCCCC")
+        #self.text_box_info.tag_config("DUPLICATE",background="#DDDDFF")
         #for list_entry in self.list_result:
         #    if "ist OK!" in list_entry:
         #        self.text_box_info.insert(tk.END, f"{list_entry}\n", "OK")
@@ -174,7 +174,7 @@ class DafenGui(tk.Frame):
         #self.text_box_info.config(state="disabled")
         #self.is_running = False
 
-    def show_file_count_result_on_gui(self):
+    def show_duplicates_count(self):
         #self.label_result_files_ok_number.config(text=f"{picture_test.files_ok}")
         #self.label_result_no_image_file_number.config(text=f"{picture_test.no_image_files}")
         #self.file_errors = picture_test.corrupted_files + picture_test.hash_errors
@@ -193,12 +193,11 @@ class DafenGui(tk.Frame):
             else:
                 picture_test.check_for_errors_is_selected = self.check_file_error.get()
                 picture_test.check_for_duplicates_is_selected = self.check_duplicates.get()
-                self.button_control_start.config(text="STOP")
-                picture_test.reset_stats()
-                                #TODO Prüf-Funktionen in eigenen Prozess auslagern
                 picture_test.continue_work = True
+                picture_test.reset_stats()
+                self.button_control_start.config(text="STOP")
                 self.write_result_in_textbox()
-                self.show_file_count_result_on_gui()
+                self.show_duplicates_count()
                 self.button_control_start.config(text="START")
         else:
             picture_test.continue_work = False

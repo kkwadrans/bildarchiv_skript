@@ -19,6 +19,8 @@ hash_errors = 0
 corrupted_files = 0
 duplicated_files = 0
 duplicate_file_names = {}
+last_checked_file = ""
+start_scan_at_file = ""
 
 infobox_queue = Queue()
 files_ok_queue = Queue()
@@ -67,35 +69,75 @@ def check_file_count(source_folder, with_subfolders = True):
         else:
             file_counter += 1
 
-def start_test(source_folder):     # create_non_global_result_list
-    result_list = []
+def start_test(source_folder):
+    global continue_work
+    global start_scan_at_file
     if check_for_errors_is_selected:
-        with open(error_log,"a") as logfile:
-            logfile.write(f"\n ----- {make_timestamp('date')} ----- \nQuell-Ordner:   {source_folder}\n------------------------------\n")
-    result_list = scan_source_folder(source_folder, result_list)
-    if check_for_errors_is_selected:
-        if hash_errors == 0 and corrupted_files == 0:
+        if start_scan_at_file == "":
             with open(error_log,"a") as logfile:
-                logfile.write(f"Keine Fehler gefunden!\n")
-    if check_for_duplicates_is_selected:
+                logfile.write(f"\n ----- {make_timestamp('date')} ----- \nQuell-Ordner:   {source_folder}\n------------------------------\n")
+        else:
+            with open(error_log,"a") as logfile:
+                logfile.write(f"\n ----- Fortsetzung der Suche: {make_timestamp('date')} ----- \n------------------------------\n")
+    scan_source_folder(source_folder)
+    if continue_work:
         if check_for_errors_is_selected:
-            infobox_queue.put("\n\n\n")
-            #result_list.append("\n\n\n")
-        search_duplicates(source_folder, result_list)
-    return result_list
+            if hash_errors == 0 and corrupted_files == 0:
+                with open(error_log,"a") as logfile:
+                    logfile.write(f"Keine Fehler gefunden!\n")
+        if check_for_duplicates_is_selected:
+            if check_for_errors_is_selected:
+                infobox_queue.put("\n\n\n")
+                #result_list.append("\n\n\n")
+            search_duplicates(source_folder)
+    else:
+        save_progress()
 
-def scan_source_folder(source_folder, list_result: list):
+def save_progress():
+    save_data = "Letzte Datei:\n"
+    save_data += last_checked_file
+    save_data += "\nDateien im Verzeichnis:\n"
+    save_data += str(file_counter)
+    save_data += "\nDateien OK:\n"
+    save_data += str(files_ok)
+    save_data += "\nDateien kein Bild\n"
+    save_data += str(no_image_files)
+    save_data += "\nKaputte Dateien:\n"
+    save_data += str(corrupted_files)
+    save_data += "\nHash Fehler:\n"
+    save_data += str(hash_errors)
+    save_data += "\nDuplikate:\n"
+    for key, values in duplicate_file_names.items():
+        save_data += key + "\n"
+        for value in values:
+            save_data += value + "\n"
+        save_data += "\n"
+    with open("continue.txt","w") as savefile:
+        savefile.write(save_data)
+
+def load_progress():
+    pass
+
+def scan_source_folder(source_folder):
     global files_ok
     global no_image_files
     global check_for_errors_is_selected
     global check_for_duplicates_is_selected
     global continue_work
+    global last_checked_file
+    global start_scan_at_file
     for filename in os.listdir(source_folder):
-        if continue_work == True:
+        if continue_work:
             file_path = os.path.join(source_folder,filename)
+            last_checked_file = file_path
             if os.path.isdir(file_path):
-                list_result = scan_source_folder(file_path, list_result)
+                scan_source_folder(file_path)
             else:
+                if start_scan_at_file != "" and start_scan_at_file != file_path:
+                    print(f"conti: {file_path}")
+                    continue
+                if start_scan_at_file != "":
+                    start_scan_at_file = ""
                 if check_for_errors_is_selected:
                     if check_file_extension(file_path):
                         try:
@@ -123,8 +165,7 @@ def scan_source_folder(source_folder, list_result: list):
                         fill_filelist_for_duplicates(filename, file_path)
         else:
             break
-    return list_result
-    
+
 def check_file_extension(file_path):
     return file_path.lower().endswith(('.png', '.jpg', '.jpeg', '.tif', '.tiff', '.bmp', '.gif'))
 
@@ -170,7 +211,7 @@ def fill_filelist_for_duplicates(filename, file_path):
         else:
             duplicate_file_names[id] = [file_path]
 
-def search_duplicates(source_folder, result_list):
+def search_duplicates(source_folder):
     global duplicated_files
     duplicate_search_result = check_for_duplicated_files()
     duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate: {duplicated_files}"
