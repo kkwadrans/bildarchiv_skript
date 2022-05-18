@@ -16,7 +16,7 @@ from threading import Thread
 
 MAX_LOG_PATH_WIDTH = 28
 
-class DafenGui(tk.Frame):
+class DafnGui(tk.Frame):
     def __init__(self, text_box_queue, master = None):
         super().__init__(master)
         self.master.protocol("WM_DELETE_WINDOW", self.close_programm)
@@ -35,7 +35,7 @@ class DafenGui(tk.Frame):
         self.create_widgets()
 
     def close_programm(self):
-        msgbox = messagebox.askquestion("Programm beenden", "Dafen22 wirklich beenden?")
+        msgbox = messagebox.askquestion("Programm beenden", "Dafn22 wirklich beenden?")
         if msgbox == "yes":
             picture_test.continue_work = False
             self.master.destroy()
@@ -58,14 +58,14 @@ class DafenGui(tk.Frame):
             #print(picture_test.infobox_queue.qsize())
             while not picture_test.infobox_queue.empty():
                 self.text_box_info.tag_config("OK",background="#88FFAA")
-                self.text_box_info.tag_config("NOIMAGE",background="#FFFFAA")
+                self.text_box_info.tag_config("NO_IMAGE",background="#FFFFAA")
                 self.text_box_info.tag_config("BROKEN",background="#FFAAAA")
                 self.text_box_info.tag_config("DUPLICATE",background="#DDDDFF")
                 queue_entry = picture_test.infobox_queue.get()
                 if "ist OK!" in queue_entry:
                     self.text_box_info.insert(tk.END, f"{queue_entry}\n", "OK")
                 elif "ist keine Bild-Datei" in queue_entry:
-                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "NOIMAGE")
+                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "NO_IMAGE")
                 elif "ist kaputt" in queue_entry:
                     self.text_box_info.insert(tk.END, f"{queue_entry}\n", "BROKEN")
                 elif "ist 0 bit groß" in queue_entry:
@@ -86,7 +86,7 @@ class DafenGui(tk.Frame):
                 #self.label_result_corrupted_files_number.config(text=picture_test.corrupted_files_queue.get())
                 #self.append_text_in_textbox(picture_test.infobox_queue.get(), False)
         else:
-            self.label_result_duplicates_number.config(text=f"{picture_test.duplicated_files}")
+            self.label_result_duplicates_number.config(text=f"{picture_test.file_duplicates}")
             self.append_text_in_textbox("----- FERTIG! -----",True)
             self.text_box_info.config(state="disabled")
             self.is_running = False
@@ -179,7 +179,7 @@ class DafenGui(tk.Frame):
         #self.label_result_no_image_file_number.config(text=f"{picture_test.no_image_files}")
         #self.file_errors = picture_test.corrupted_files + picture_test.hash_errors
         #self.label_result_corrupted_files_number.config(text=f"{self.file_errors}")
-        self.label_result_duplicates_number.config(text=f"{picture_test.duplicated_files}")
+        self.label_result_duplicates_number.config(text=f"{picture_test.file_duplicates}")
 
     def press_start(self):
         if self.is_running == False:
@@ -354,8 +354,8 @@ def main():
     text_box_queue = Queue()
 
     root = tk.Tk()
-    app = DafenGui(text_box_queue, master = root)
-    app.master.title("Dafen22")
+    app = DafnGui(text_box_queue, master = root)
+    app.master.title("Dafn22")
     
     app.mainloop()
 

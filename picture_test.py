@@ -6,6 +6,18 @@ from PIL import Image, UnidentifiedImageError
 from time import strftime
 import traceback
 
+# disable DecompressionBombWarning
+Image.MAX_IMAGE_PIXELS = None
+
+save_label_source_folder = "Quellordner:\n"
+save_label_last_checked_file = "\nLetzte Datei:\n"
+save_label_file_count = "\nDateien im Verzeichnis:\n"
+save_label_files_ok = "\nDateien OK:\n"
+save_label_no_image_files = "\nDateien kein Bild:\n"
+save_label_corropted_files = "\nKaputte Dateien:\n"
+save_label_hash_errors = "\nHash Fehler:\n"
+save_label_file_duplicates = "\nDuplikate:\n"
+
 error_log = config.file_error_log
 duplicates_log = config.file_duplicates_log
 continue_work = False
@@ -17,7 +29,7 @@ files_ok = 0
 no_image_files = 0
 hash_errors = 0
 corrupted_files = 0
-duplicated_files = 0
+file_duplicates = 0
 duplicate_file_names = {}
 last_checked_file = ""
 start_scan_at_file = ""
@@ -33,7 +45,7 @@ def reset_stats():
     global no_image_files
     global hash_errors
     global corrupted_files
-    global duplicated_files
+    global file_duplicates
     global duplicate_file_names
 
     file_counter = 0
@@ -41,7 +53,7 @@ def reset_stats():
     no_image_files = 0
     hash_errors = 0
     corrupted_files = 0
-    duplicated_files = 0
+    file_duplicates = 0
     duplicate_file_names.clear()
 
 def make_timestamp(style:str):
@@ -53,9 +65,6 @@ def make_timestamp(style:str):
         return strftime('%d.%m.%Y, %H:%M:%S')
 
 def handleError(e):
-    #print("!",e)
-    #traceback.print_exc() #print stack trace
-    #with open("errors.log","a") as logfile:
     with open(error_log,"a") as logfile:
         logfile.write(f"{make_timestamp('time')} : {str(e)}\n")
 
@@ -72,6 +81,8 @@ def check_file_count(source_folder, with_subfolders = True):
 def start_test(source_folder):
     global continue_work
     global start_scan_at_file
+    if os.path.isfile(config.save_file):
+        source_folder = load_progress()
     if check_for_errors_is_selected:
         if start_scan_at_file == "":
             with open(error_log,"a") as logfile:
@@ -91,32 +102,106 @@ def start_test(source_folder):
                 #result_list.append("\n\n\n")
             search_duplicates(source_folder)
     else:
-        save_progress()
+        save_progress(source_folder)
 
-def save_progress():
-    save_data = "Letzte Datei:\n"
+def save_progress(source_folder):
+    save_data = save_label_source_folder
+    save_data += source_folder
+    save_data += save_label_last_checked_file
     save_data += last_checked_file
-    save_data += "\nDateien im Verzeichnis:\n"
+    save_data += save_label_file_count
     save_data += str(file_counter)
-    save_data += "\nDateien OK:\n"
+    save_data += save_label_files_ok
     save_data += str(files_ok)
-    save_data += "\nDateien kein Bild\n"
+    save_data += save_label_no_image_files
     save_data += str(no_image_files)
-    save_data += "\nKaputte Dateien:\n"
+    save_data += save_label_corropted_files
     save_data += str(corrupted_files)
-    save_data += "\nHash Fehler:\n"
+    save_data += save_label_hash_errors
     save_data += str(hash_errors)
-    save_data += "\nDuplikate:\n"
+    save_data += save_label_file_duplicates
     for key, values in duplicate_file_names.items():
         save_data += key + "\n"
         for value in values:
             save_data += value + "\n"
         save_data += "\n"
-    with open("continue.txt","w") as savefile:
+    with open(config.save_file,"w") as savefile:
         savefile.write(save_data)
 
 def load_progress():
-    pass
+    global start_scan_at_file
+    global file_counter
+    global files_ok
+    global no_image_files
+    global corrupted_files
+    global hash_errors
+    global duplicate_file_names
+
+    bool_set_source_folder = False
+    bool_set_scan_file = False
+    bool_set_file_counter = False
+    bool_set_files_ok = False
+    bool_set_no_image_files = False
+    bool_set_corrupted_files = False
+    bool_set_hash_errors = False
+    bool_set_duplicates_file_names = False
+    bool_set_duplicate_headline = True
+    duplicate_current_filename = ""
+
+    source_folder = ""
+    with open(config.save_file,"r") as loaded_data:
+        for file_line in loaded_data:
+            # read headlines
+            if save_label_source_folder.strip() in file_line.strip():
+                bool_set_source_folder = True
+            elif save_label_last_checked_file.strip() in file_line.strip():
+                bool_set_scan_file = True
+            elif save_label_file_count.strip() in file_line.strip():
+                bool_set_file_counter = True
+            elif save_label_files_ok.strip() in file_line.strip():
+                bool_set_files_ok = True
+            elif save_label_no_image_files.strip() in file_line.strip():
+                bool_set_no_image_files = True
+            elif save_label_corropted_files.strip() in file_line.strip():
+                bool_set_corrupted_files = True
+            elif save_label_hash_errors.strip() in file_line.strip():
+                bool_set_hash_errors = True
+            elif save_label_file_duplicates.strip() in file_line.strip():
+                bool_set_duplicates_file_names = True
+            # read values
+            elif bool_set_source_folder:
+                source_folder = file_line.strip()
+                bool_set_source_folder = False
+            elif bool_set_scan_file:
+                start_scan_at_file = file_line.strip()
+                bool_set_scan_file = False
+            elif bool_set_file_counter:
+                file_counter= int(file_line.strip())
+                bool_set_file_counter = False
+            elif bool_set_files_ok:
+                files_ok = int(file_line.strip())
+                bool_set_files_ok = False
+            elif bool_set_no_image_files:
+                no_image_files = int(file_line.strip())
+                bool_set_no_image_files = False
+            elif bool_set_corrupted_files:
+                corrupted_files = int(file_line.strip())
+                bool_set_corrupted_files = False
+            elif bool_set_hash_errors:
+                hash_errors = int(file_line.strip())
+                bool_set_hash_errors = False
+            elif bool_set_duplicates_file_names:
+                if bool_set_duplicate_headline:
+                    duplicate_current_filename = file_line.strip()
+                    bool_set_duplicate_headline = False
+                elif not bool_set_duplicate_headline and file_line.strip() == "":
+                    bool_set_duplicate_headline = True
+                else:
+                    if duplicate_current_filename in duplicate_file_names.keys():
+                        duplicate_file_names[duplicate_current_filename].append(file_line.strip())
+                    else:
+                        duplicate_file_names[duplicate_current_filename] = [file_line.strip()]
+    return source_folder
 
 def scan_source_folder(source_folder):
     global files_ok
@@ -134,10 +219,10 @@ def scan_source_folder(source_folder):
                 scan_source_folder(file_path)
             else:
                 if start_scan_at_file != "" and start_scan_at_file != file_path:
-                    print(f"conti: {file_path}")
                     continue
-                if start_scan_at_file != "":
+                if start_scan_at_file == file_path:
                     start_scan_at_file = ""
+                    continue
                 if check_for_errors_is_selected:
                     if check_file_extension(file_path):
                         try:
@@ -212,22 +297,22 @@ def fill_filelist_for_duplicates(filename, file_path):
             duplicate_file_names[id] = [file_path]
 
 def search_duplicates(source_folder):
-    global duplicated_files
-    duplicate_search_result = check_for_duplicated_files()
-    duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate: {duplicated_files}"
+    global file_duplicates
+    duplicate_search_result = check_for_file_duplicates()
+    duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate: {file_duplicates}"
     duplicates += duplicate_search_result
     infobox_queue.put(duplicates)
     #result_list.append(duplicates)
     duplicates += "\n\n\n\n"
     save_duplicates_log(duplicates)
 
-def check_for_duplicated_files():
-    global duplicated_files
+def check_for_file_duplicates():
+    global file_duplicates
     search_result = ""
     for key, values in duplicate_file_names.items():
         if len(values) > 1:
             search_result += (f"\n\nDateiname: {key}\n")
-            duplicated_files += 1
+            file_duplicates += 1
             i = 1
             for value in values:
                 if i > 1:
