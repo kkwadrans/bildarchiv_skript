@@ -25,6 +25,7 @@ class DafnGui(tk.Frame):
         else:
             self.os_path_splitter = "/" 
         self.source_folder = ""
+        self.is_interrupted = False
         self.is_running = False
         self.check_file_error = BooleanVar()
         self.check_duplicates = BooleanVar()
@@ -35,6 +36,7 @@ class DafnGui(tk.Frame):
         self.create_widgets()
         load_folder = picture_test.program_start()
         if load_folder != "":
+            self.is_interrupted = True
             self.check_file_error.set(picture_test.check_for_errors_is_selected)
             self.check_duplicates.set(picture_test.check_for_duplicates_is_selected)
             self.source_folder = load_folder
@@ -44,6 +46,9 @@ class DafnGui(tk.Frame):
             self.label_result_no_image_file_number.config(text = picture_test.no_image_files)
             self.label_result_corrupted_files_number.config(text = (picture_test.corrupted_files + picture_test.hash_errors))
             self.button_control_start.config(text = "FORTFAHREN")
+        else:
+            self.check_file_error.set(True)
+            self.check_duplicates.set(True)
 
     def close_programm(self):
         msgbox = messagebox.askquestion("Programm beenden", "Dafn22 wirklich beenden?")
@@ -97,11 +102,15 @@ class DafnGui(tk.Frame):
                 #self.label_result_corrupted_files_number.config(text=picture_test.corrupted_files_queue.get())
                 #self.append_text_in_textbox(picture_test.infobox_queue.get(), False)
         else:
-            self.label_result_duplicates_number.config(text=f"{picture_test.file_duplicates}")
-            self.append_text_in_textbox("----- FERTIG! -----",True)
+            if self.is_interrupted:
+                self.append_text_in_textbox("----- UNTERBROCHEN! -----",True)
+                self.button_control_start.config(text="FORTFAHREN")
+            else:
+                self.label_result_duplicates_number.config(text=f"{picture_test.file_duplicates}")
+                self.append_text_in_textbox("----- FERTIG! -----",True)
+                self.button_control_start.config(text="START")
             self.text_box_info.config(state="disabled")
             self.is_running = False
-            self.button_control_start.config(text="START")
 
     def split_log_file_path_label(self, log_path):
         self.log_splitlist = log_path.split(self.os_path_splitter)
@@ -150,6 +159,9 @@ class DafnGui(tk.Frame):
     def select_source_folder(self):
         self.selected_folder = str(tkfd.askdirectory())
         if self.selected_folder != "":
+            if self.is_interrupted == True:
+                self.is_interrupted = False
+                self.button_control_start.config(text=("START"))
             self.source_folder = self.selected_folder
             self.label_source_path.config(text = self.source_folder)
             picture_test.file_counter = 0
@@ -199,12 +211,14 @@ class DafnGui(tk.Frame):
                 picture_test.check_for_errors_is_selected = self.check_file_error.get()
                 picture_test.check_for_duplicates_is_selected = self.check_duplicates.get()
                 picture_test.continue_work = True
+                self.is_interrupted = False
                 picture_test.reset_stats()
                 self.label_result_duplicates_number.config(text = "0")
                 self.button_control_start.config(text="STOP")
                 self.write_result_in_textbox()
         else:
             picture_test.continue_work = False
+            self.is_interrupted = True
             self.button_control_start.config(text="FORTFAHERN")
             self.is_running = False
 

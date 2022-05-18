@@ -39,9 +39,9 @@ last_checked_file = ""
 start_scan_at_file = ""
 
 infobox_queue = Queue()
-files_ok_queue = Queue()
-no_image_files_queue = Queue()
-corrupted_files_queue = Queue()
+#files_ok_queue = Queue()
+#no_image_files_queue = Queue()
+#corrupted_files_queue = Queue()
 
 def program_start():
     global start_new_search
@@ -82,6 +82,18 @@ def handleError(e):
 
 def check_file_count(source_folder, with_subfolders = True):
     global file_counter
+    global start_new_search
+    global start_scan_at_file
+
+    if not start_new_search:
+        start_new_search = True
+        start_scan_at_file = ""
+        if os.path.isfile(config.save_file):
+            try:
+                os.remove(config.save_file)
+            except OSError as e:
+                print(e)
+                    
     for filename in os.listdir(source_folder):
         file_path = os.path.join(source_folder,filename)
         if os.path.isdir(file_path):
@@ -121,6 +133,131 @@ def start_test(source_folder):
     else:
         start_new_search = False
         save_progress(source_folder)
+
+def scan_source_folder(source_folder):
+    global files_ok
+    global no_image_files
+    global check_for_errors_is_selected
+    global check_for_duplicates_is_selected
+    global continue_work
+    global last_checked_file
+    global start_scan_at_file
+    for filename in os.listdir(source_folder):
+        if continue_work:
+            file_path = os.path.join(source_folder,filename)
+            last_checked_file = file_path
+            if os.path.isdir(file_path):
+                scan_source_folder(file_path)
+            else:
+                if start_scan_at_file != "" and start_scan_at_file != file_path:
+                    continue
+                if start_scan_at_file == file_path:
+                    start_scan_at_file = ""
+                    continue
+                if check_for_errors_is_selected:
+                    if check_file_extension(file_path):
+                        try:
+                            get_hash_value(file_path)
+                            check_if_image_is_broken(file_path)
+                            infobox_queue.put(f"{make_timestamp('time')} : {file_path} ist OK!")
+                            #list_result.append(f"{make_timestamp('time')} : {file_path} ist OK!")
+                            files_ok += 1
+                            #files_ok_queue.put(f"{files_ok}")
+                        except (UnidentifiedImageError) as e:
+                            infobox_queue.put(f"{make_timestamp('time')} : {e}")
+                            #list_result.append(f"{make_timestamp('time')} : {e}")
+                            handleError(e)
+                        except (OSError) as e:
+                            infobox_queue.put(f"{make_timestamp('time')} : {e}")
+                            #list_result.append(f"{make_timestamp('time')} : {e}")
+                            handleError(e)
+                    else:
+                            no_image_files += 1
+                            #no_image_files_queue.put(no_image_files)
+                            infobox_queue.put(f"{make_timestamp('time')} : {file_path} ist keine Bild-Datei")
+                            with open(error_log,"a") as logfile:
+                                logfile.write(f"{make_timestamp('time')} : {file_path} ist keine Bild-Datei\n")
+                if check_for_duplicates_is_selected:
+                        fill_filelist_for_duplicates(filename, file_path)
+        else:
+            start_scan_at_file = last_checked_file
+            break
+
+def check_file_extension(file_path):
+    return file_path.lower().endswith(('.png', '.jpg', '.jpeg', '.tif', '.tiff', '.bmp', '.gif'))
+
+def get_hash_value(file_path): #compute checksum. here 'truncated image' exception (OS error) can occure
+    try:
+        global hash_errors
+        image = Image.open(file_path)
+        return hashlib.md5(image.tobytes()).hexdigest()
+    except (OSError):
+        hash_errors += 1
+        #corrupted_files_queue.put(hash_errors + corrupted_files)
+        raise OSError(f"{file_path} ist kaputt oder kein Bild.")
+        #raise OSError(f"{file_path} ist kaputt oder kein Bild.\n{str(e)}")
+
+def check_if_image_is_broken(file_path):
+    try:
+        global corrupted_files
+        statfile = os.stat(file_path)
+        filesize = statfile.st_size
+        if filesize == 0:
+            raise UnidentifiedImageError(f"{file_path} ist 0 bit groß")
+        img = Image.open(file_path) # open the image file
+        img.verify() # verify that it is an image that can be opened
+        img.close()
+        img = Image.open(file_path) 
+        img.transpose(Image.FLIP_LEFT_RIGHT) #check for truncated image
+        img.close()
+    except (UnidentifiedImageError):
+        corrupted_files += 1
+        #corrupted_files_queue.put(hash_errors + corrupted_files)
+        raise UnidentifiedImageError (f"{file_path} ist kaputt")
+    except (OSError):
+        corrupted_files += 1
+        #corrupted_files_queue.put(hash_errors + corrupted_files)
+        raise OSError (f"{file_path} ist trunkiert")
+
+def fill_filelist_for_duplicates(filename, file_path):
+    global duplicate_file_names
+    if  not os.path.isdir(filename):
+        id = filename.split(".")[0]
+        if id in duplicate_file_names.keys():
+            duplicate_file_names[id].append(file_path)
+        else:
+            duplicate_file_names[id] = [file_path]
+
+def search_duplicates(source_folder):
+    global file_duplicates
+    duplicate_search_result = check_for_file_duplicates()
+    duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate: {file_duplicates}"
+    duplicates += duplicate_search_result
+    infobox_queue.put(duplicates)
+    #result_list.append(duplicates)
+    duplicates += "\n\n\n\n"
+    save_duplicates_log(duplicates)
+
+def check_for_file_duplicates():
+    global file_duplicates
+    search_result = ""
+    for key, values in duplicate_file_names.items():
+        if len(values) > 1:
+            search_result += (f"\n\nDateiname: {key}\n")
+            file_duplicates += 1
+            i = 1
+            for value in values:
+                if i > 1:
+                    search_result += (f"\n")
+                i += 1
+                search_result += (f"{value}")
+    if search_result == "":
+        search_result += " \nKeine"
+    return search_result
+
+def save_duplicates_log(duplicates):
+     with open(duplicates_log,"a") as logfile:
+        logfile.write(f"{duplicates}")
 
 def save_progress(source_folder):
     save_data = save_label_source_folder
@@ -238,128 +375,3 @@ def load_progress():
                     else:
                         duplicate_file_names[duplicate_current_filename] = [file_line.strip()]
     return source_folder
-
-def scan_source_folder(source_folder):
-    global files_ok
-    global no_image_files
-    global check_for_errors_is_selected
-    global check_for_duplicates_is_selected
-    global continue_work
-    global last_checked_file
-    global start_scan_at_file
-    for filename in os.listdir(source_folder):
-        if continue_work:
-            file_path = os.path.join(source_folder,filename)
-            last_checked_file = file_path
-            if os.path.isdir(file_path):
-                scan_source_folder(file_path)
-            else:
-                if start_scan_at_file != "" and start_scan_at_file != file_path:
-                    continue
-                if start_scan_at_file == file_path:
-                    start_scan_at_file = ""
-                    continue
-                if check_for_errors_is_selected:
-                    if check_file_extension(file_path):
-                        try:
-                            get_hash_value(file_path)
-                            check_if_image_is_broken(file_path)
-                            infobox_queue.put(f"{make_timestamp('time')} : {file_path} ist OK!")
-                            #list_result.append(f"{make_timestamp('time')} : {file_path} ist OK!")
-                            files_ok += 1
-                            files_ok_queue.put(f"{files_ok}")
-                        except (UnidentifiedImageError) as e:
-                            infobox_queue.put(f"{make_timestamp('time')} : {e}")
-                            #list_result.append(f"{make_timestamp('time')} : {e}")
-                            handleError(e)
-                        except (OSError) as e:
-                            infobox_queue.put(f"{make_timestamp('time')} : {e}")
-                            #list_result.append(f"{make_timestamp('time')} : {e}")
-                            handleError(e)
-                    else:
-                            no_image_files += 1
-                            no_image_files_queue.put(no_image_files)
-                            infobox_queue.put(f"{make_timestamp('time')} : {file_path} ist keine Bild-Datei")
-                            with open(error_log,"a") as logfile:
-                                logfile.write(f"{make_timestamp('time')} : {file_path} ist keine Bild-Datei\n")
-                if check_for_duplicates_is_selected:
-                        fill_filelist_for_duplicates(filename, file_path)
-        else:
-            start_scan_at_file = last_checked_file
-            break
-
-def check_file_extension(file_path):
-    return file_path.lower().endswith(('.png', '.jpg', '.jpeg', '.tif', '.tiff', '.bmp', '.gif'))
-
-def get_hash_value(file_path): #compute checksum. here 'truncated image' exception (OS error) can occure
-    try:
-        global hash_errors
-        image = Image.open(file_path)
-        return hashlib.md5(image.tobytes()).hexdigest()
-    except (OSError):
-        hash_errors += 1
-        corrupted_files_queue.put(hash_errors + corrupted_files)
-        raise OSError(f"{file_path} ist kaputt oder kein Bild.")
-        #raise OSError(f"{file_path} ist kaputt oder kein Bild.\n{str(e)}")
-
-def check_if_image_is_broken(file_path):
-    try:
-        global corrupted_files
-        statfile = os.stat(file_path)
-        filesize = statfile.st_size
-        if filesize == 0:
-            raise UnidentifiedImageError(f"{file_path} ist 0 bit groß")
-        img = Image.open(file_path) # open the image file
-        img.verify() # verify that it is an image that can be opened
-        img.close()
-        img = Image.open(file_path) 
-        img.transpose(Image.FLIP_LEFT_RIGHT) #check for truncated image
-        img.close()
-    except (UnidentifiedImageError):
-        corrupted_files += 1
-        corrupted_files_queue.put(hash_errors + corrupted_files)
-        raise UnidentifiedImageError (f"{file_path} ist kaputt")
-    except (OSError):
-        corrupted_files += 1
-        corrupted_files_queue.put(hash_errors + corrupted_files)
-        raise OSError (f"{file_path} ist trunkiert")
-
-def fill_filelist_for_duplicates(filename, file_path):
-    global duplicate_file_names
-    if  not os.path.isdir(filename):
-        id = filename.split(".")[0]
-        if id in duplicate_file_names.keys():
-            duplicate_file_names[id].append(file_path)
-        else:
-            duplicate_file_names[id] = [file_path]
-
-def search_duplicates(source_folder):
-    global file_duplicates
-    duplicate_search_result = check_for_file_duplicates()
-    duplicates = f"---------------------------------  {make_timestamp('all')}  --------------------------------- \nQuell-Ordner:   {source_folder}\n------------------------------------------------------------------------------------------\nGefundene Duplikate: {file_duplicates}"
-    duplicates += duplicate_search_result
-    infobox_queue.put(duplicates)
-    #result_list.append(duplicates)
-    duplicates += "\n\n\n\n"
-    save_duplicates_log(duplicates)
-
-def check_for_file_duplicates():
-    global file_duplicates
-    search_result = ""
-    for key, values in duplicate_file_names.items():
-        if len(values) > 1:
-            search_result += (f"\n\nDateiname: {key}\n")
-            file_duplicates += 1
-            i = 1
-            for value in values:
-                if i > 1:
-                    search_result += (f"\n")
-                i += 1
-                search_result += (f"{value}")
-    if search_result == "":
-        search_result += " \nKeine"
-    return search_result
-
-def save_duplicates_log(duplicates):
-     with open(duplicates_log,"a") as logfile:
-        logfile.write(f"{duplicates}")
