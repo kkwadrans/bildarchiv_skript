@@ -33,6 +33,17 @@ class DafnGui(tk.Frame):
         self.infobox_queue = text_box_queue
         self.get_splited_log_paths()
         self.create_widgets()
+        load_folder = picture_test.program_start()
+        if load_folder != "":
+            self.check_file_error.set(picture_test.check_for_errors_is_selected)
+            self.check_duplicates.set(picture_test.check_for_duplicates_is_selected)
+            self.source_folder = load_folder
+            self.label_source_path.config(text = self.source_folder)
+            self.label_input_files_number.config(text = picture_test.file_counter)
+            self.label_result_files_ok_number.config(text = picture_test.files_ok)
+            self.label_result_no_image_file_number.config(text = picture_test.no_image_files)
+            self.label_result_corrupted_files_number.config(text = (picture_test.corrupted_files + picture_test.hash_errors))
+            self.button_control_start.config(text = "FORTFAHREN")
 
     def close_programm(self):
         msgbox = messagebox.askquestion("Programm beenden", "Dafn22 wirklich beenden?")
@@ -90,6 +101,7 @@ class DafnGui(tk.Frame):
             self.append_text_in_textbox("----- FERTIG! -----",True)
             self.text_box_info.config(state="disabled")
             self.is_running = False
+            self.button_control_start.config(text="START")
 
     def split_log_file_path_label(self, log_path):
         self.log_splitlist = log_path.split(self.os_path_splitter)
@@ -174,13 +186,6 @@ class DafnGui(tk.Frame):
         #self.text_box_info.config(state="disabled")
         #self.is_running = False
 
-    def show_duplicates_count(self):
-        #self.label_result_files_ok_number.config(text=f"{picture_test.files_ok}")
-        #self.label_result_no_image_file_number.config(text=f"{picture_test.no_image_files}")
-        #self.file_errors = picture_test.corrupted_files + picture_test.hash_errors
-        #self.label_result_corrupted_files_number.config(text=f"{self.file_errors}")
-        self.label_result_duplicates_number.config(text=f"{picture_test.file_duplicates}")
-
     def press_start(self):
         if self.is_running == False:
             self.is_running = True
@@ -195,13 +200,12 @@ class DafnGui(tk.Frame):
                 picture_test.check_for_duplicates_is_selected = self.check_duplicates.get()
                 picture_test.continue_work = True
                 picture_test.reset_stats()
+                self.label_result_duplicates_number.config(text = "0")
                 self.button_control_start.config(text="STOP")
                 self.write_result_in_textbox()
-                self.show_duplicates_count()
-                self.button_control_start.config(text="START")
         else:
             picture_test.continue_work = False
-            self.button_control_start.config(text="START")
+            self.button_control_start.config(text="FORTFAHERN")
             self.is_running = False
 
     def create_widgets(self):

@@ -10,6 +10,8 @@ import traceback
 Image.MAX_IMAGE_PIXELS = None
 
 save_label_source_folder = "Quellordner:\n"
+save_label_check_errors = "\nAuf Fehler pruefen:\n"
+save_label_check_duplicates = "\nAuf Duplikate pruefen:\n"
 save_label_last_checked_file = "\nLetzte Datei:\n"
 save_label_file_count = "\nDateien im Verzeichnis:\n"
 save_label_files_ok = "\nDateien OK:\n"
@@ -20,6 +22,8 @@ save_label_file_duplicates = "\nDuplikate:\n"
 
 error_log = config.file_error_log
 duplicates_log = config.file_duplicates_log
+
+start_new_search = True
 continue_work = False
 
 check_for_errors_is_selected = False
@@ -39,8 +43,16 @@ files_ok_queue = Queue()
 no_image_files_queue = Queue()
 corrupted_files_queue = Queue()
 
+def program_start():
+    global start_new_search
+    if os.path.isfile(config.save_file):
+        start_new_search = False
+        return load_progress()
+    else:
+        start_new_search = True
+        return ""
+
 def reset_stats():
-    global file_counter
     global files_ok
     global no_image_files
     global hash_errors
@@ -48,13 +60,13 @@ def reset_stats():
     global file_duplicates
     global duplicate_file_names
 
-    file_counter = 0
-    files_ok = 0
-    no_image_files = 0
-    hash_errors = 0
-    corrupted_files = 0
-    file_duplicates = 0
-    duplicate_file_names.clear()
+    if start_new_search:
+        files_ok = 0
+        no_image_files = 0
+        hash_errors = 0
+        corrupted_files = 0
+        file_duplicates = 0
+        duplicate_file_names.clear()
 
 def make_timestamp(style:str):
     if style == "date":
@@ -81,8 +93,7 @@ def check_file_count(source_folder, with_subfolders = True):
 def start_test(source_folder):
     global continue_work
     global start_scan_at_file
-    if os.path.isfile(config.save_file):
-        source_folder = load_progress()
+    global start_new_search
     if check_for_errors_is_selected:
         if start_scan_at_file == "":
             with open(error_log,"a") as logfile:
@@ -101,12 +112,23 @@ def start_test(source_folder):
                 infobox_queue.put("\n\n\n")
                 #result_list.append("\n\n\n")
             search_duplicates(source_folder)
+        if os.path.isfile(config.save_file):
+            try:
+                os.remove(config.save_file)
+            except OSError as e:
+                print(e)
+        start_new_search = True
     else:
+        start_new_search = False
         save_progress(source_folder)
 
 def save_progress(source_folder):
     save_data = save_label_source_folder
     save_data += source_folder
+    save_data += save_label_check_errors
+    save_data += str(check_for_errors_is_selected)
+    save_data += save_label_check_duplicates
+    save_data += str(check_for_duplicates_is_selected)
     save_data += save_label_last_checked_file
     save_data += last_checked_file
     save_data += save_label_file_count
@@ -130,6 +152,8 @@ def save_progress(source_folder):
 
 def load_progress():
     global start_scan_at_file
+    global check_for_errors_is_selected
+    global check_for_duplicates_is_selected
     global file_counter
     global files_ok
     global no_image_files
@@ -139,6 +163,8 @@ def load_progress():
 
     bool_set_source_folder = False
     bool_set_scan_file = False
+    bool_set_check_errors = False
+    bool_set_check_duplicates = False
     bool_set_file_counter = False
     bool_set_files_ok = False
     bool_set_no_image_files = False
@@ -156,6 +182,10 @@ def load_progress():
                 bool_set_source_folder = True
             elif save_label_last_checked_file.strip() in file_line.strip():
                 bool_set_scan_file = True
+            elif save_label_check_errors.strip() in file_line.strip():
+                bool_set_check_errors = True    
+            elif save_label_check_duplicates.strip() in file_line.strip():
+                bool_set_check_duplicates = True
             elif save_label_file_count.strip() in file_line.strip():
                 bool_set_file_counter = True
             elif save_label_files_ok.strip() in file_line.strip():
@@ -175,6 +205,12 @@ def load_progress():
             elif bool_set_scan_file:
                 start_scan_at_file = file_line.strip()
                 bool_set_scan_file = False
+            elif bool_set_check_errors:
+                check_for_errors_is_selected = bool(file_line.strip())
+                bool_set_check_errors = False
+            elif bool_set_check_duplicates:
+                check_for_duplicates_is_selected = bool(file_line.strip())
+                bool_set_check_duplicates = False    
             elif bool_set_file_counter:
                 file_counter= int(file_line.strip())
                 bool_set_file_counter = False
@@ -249,6 +285,7 @@ def scan_source_folder(source_folder):
                 if check_for_duplicates_is_selected:
                         fill_filelist_for_duplicates(filename, file_path)
         else:
+            start_scan_at_file = last_checked_file
             break
 
 def check_file_extension(file_path):
