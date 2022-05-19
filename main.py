@@ -20,7 +20,7 @@ class DafnGui(tk.Frame):
     def __init__(self, text_box_queue, master = None):
         super().__init__(master)
         self.master.protocol("WM_DELETE_WINDOW", self.close_programm)
-        if os.name == "nt":
+        if os.name == "nt": # check which boerating system
             self.os_path_splitter = "\\"
         else:
             self.os_path_splitter = "/" 
@@ -34,6 +34,13 @@ class DafnGui(tk.Frame):
         self.infobox_queue = text_box_queue
         self.get_splited_log_paths()
         self.create_widgets()
+        self.set_infobox_linecolor()
+        self.prepare_start_status()
+
+    def prepare_start_status(self):
+        """
+        if there is a unfinished file-test at program start, it load all the data from the last unfinished test
+        """
         load_folder = picture_test.program_start()
         if load_folder != "":
             self.is_interrupted = True
@@ -50,48 +57,63 @@ class DafnGui(tk.Frame):
             self.check_file_error.set(True)
             self.check_duplicates.set(True)
 
+    def set_infobox_linecolor(self):
+        """
+        prepares the main textbox, and set tags for line color
+        """
+        self.text_box_info.tag_config("OK",background="#88FFAA")
+        self.text_box_info.tag_config("NO_IMAGE",background="#FFFFAA")
+        self.text_box_info.tag_config("BROKEN",background="#FFAAAA")
+        self.text_box_info.tag_config("DUPLICATE",background="#DDDDFF")
+
     def close_programm(self):
+        """
+        the function that never will be used :)
+        """
         msgbox = messagebox.askquestion("Programm beenden", "Dafn22 wirklich beenden?")
         if msgbox == "yes":
             picture_test.continue_work = False
             self.master.destroy()
 
+    def set_queue_read_interval(self):
+        if picture_test.infobox_queue.qsize() > 100:
+            queue_read_interval = 5
+        elif picture_test.infobox_queue.qsize() > 50:
+            queue_read_interval = 10
+        elif picture_test.infobox_queue.qsize() > 10:
+            queue_read_interval = 15
+        elif picture_test.infobox_queue.qsize() > 5:
+            queue_read_interval = 30
+        elif picture_test.infobox_queue.qsize() > 2:
+            queue_read_interval = 50
+        else:
+            queue_read_interval = 100
+        return queue_read_interval
+
+    def print_queue_value_in_infobox(self, queue_entry):
+        if "ist OK!" in queue_entry:
+            self.text_box_info.insert(tk.END, f"{queue_entry}\n", "OK")
+        elif "ist keine Bild-Datei" in queue_entry:
+            self.text_box_info.insert(tk.END, f"{queue_entry}\n", "NO_IMAGE")
+        elif "ist kaputt" in queue_entry:
+            self.text_box_info.insert(tk.END, f"{queue_entry}\n", "BROKEN")
+        elif "ist 0 bit groß" in queue_entry:
+            self.text_box_info.insert(tk.END, f"{queue_entry}\n", "BROKEN")
+        elif "ist trunkiert" in queue_entry:
+            self.text_box_info.insert(tk.END, f"{queue_entry}\n", "BROKEN")
+        elif "------------------------" in queue_entry:
+            self.text_box_info.insert(tk.END, f"{queue_entry}\n", "DUPLICATE")
+        else:
+            self.append_text_in_textbox(f"{queue_entry}")
+
     def get_queue_content(self):
         if self.t1.is_alive() or not picture_test.infobox_queue.empty():
-            if picture_test.infobox_queue.qsize() > 100:
-                queue_read_speed = 5
-            elif picture_test.infobox_queue.qsize() > 50:
-                queue_read_speed = 10
-            elif picture_test.infobox_queue.qsize() > 10:
-                queue_read_speed = 15
-            elif picture_test.infobox_queue.qsize() > 5:
-                queue_read_speed = 30
-            elif picture_test.infobox_queue.qsize() > 2:
-                queue_read_speed = 50
-            else:
-                queue_read_speed = 100
-            self.master.after(queue_read_speed, self.get_queue_content)
-            #print(picture_test.infobox_queue.qsize())
+            queue_read_interval = self.set_queue_read_interval()
+            self.master.after(queue_read_interval, self.get_queue_content)
+            
             while not picture_test.infobox_queue.empty():
-                self.text_box_info.tag_config("OK",background="#88FFAA")
-                self.text_box_info.tag_config("NO_IMAGE",background="#FFFFAA")
-                self.text_box_info.tag_config("BROKEN",background="#FFAAAA")
-                self.text_box_info.tag_config("DUPLICATE",background="#DDDDFF")
                 queue_entry = picture_test.infobox_queue.get()
-                if "ist OK!" in queue_entry:
-                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "OK")
-                elif "ist keine Bild-Datei" in queue_entry:
-                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "NO_IMAGE")
-                elif "ist kaputt" in queue_entry:
-                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "BROKEN")
-                elif "ist 0 bit groß" in queue_entry:
-                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "BROKEN")
-                elif "ist trunkiert" in queue_entry:
-                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "BROKEN")
-                elif "------------------------" in queue_entry:
-                    self.text_box_info.insert(tk.END, f"{queue_entry}\n", "DUPLICATE")
-                else:
-                    self.append_text_in_textbox(f"{queue_entry}")
+                self.print_queue_value_in_infobox(queue_entry)
 
                 self.label_result_files_ok_number.config(text=picture_test.files_ok)
                 self.label_result_no_image_file_number.config(text=picture_test.no_image_files)
@@ -165,7 +187,7 @@ class DafnGui(tk.Frame):
             self.source_folder = self.selected_folder
             self.label_source_path.config(text = self.source_folder)
             picture_test.file_counter = 0
-            picture_test.check_file_count(self.source_folder, True)
+            picture_test.prepare_for_a_new_file_test(self.source_folder, True)
             self.label_input_files_number.config(text=f"{picture_test.file_counter}")
 
     def write_result_in_textbox(self):
@@ -176,27 +198,6 @@ class DafnGui(tk.Frame):
         self.t1 = Thread(target=picture_test.start_test, args=(self.source_folder,))
         self.t1.start()
         self.get_queue_content()
-
-        #self.list_result = picture_test.start_test(self.source_folder)
-        #self.text_box_info.tag_config("OK",background="#CCFFCC")
-        #self.text_box_info.tag_config("KAPUTT",background="#FFCCCC")
-        #self.text_box_info.tag_config("DUPLICATE",background="#DDDDFF")
-        #for list_entry in self.list_result:
-        #    if "ist OK!" in list_entry:
-        #        self.text_box_info.insert(tk.END, f"{list_entry}\n", "OK")
-        #    elif "ist kaputt" in list_entry:
-        #        self.text_box_info.insert(tk.END, f"{list_entry}\n", "KAPUTT")
-        #    elif "ist 0 bit groß" in list_entry:
-        #        self.text_box_info.insert(tk.END, f"{list_entry}\n", "KAPUTT")
-        #    elif "ist trunkiert" in list_entry:
-        #        self.text_box_info.insert(tk.END, f"{list_entry}\n", "KAPUTT")
-        #    elif "------------------------" in list_entry:
-        #        self.text_box_info.insert(tk.END, f"{list_entry}\n", "DUPLICATE")
-        #    else:
-        #        self.append_text_in_textbox(f"{list_entry}")
-        #self.append_text_in_textbox("----- FERTIG! -----",True)
-        #self.text_box_info.config(state="disabled")
-        #self.is_running = False
 
     def press_start(self):
         if self.is_running == False:
@@ -364,10 +365,6 @@ class DafnGui(tk.Frame):
         #text_box_info.bind("<Button-1>", check_pos)
         #--------------------------------------------------
 
-# +++ RESIZE +++
-#root.rowconfigure(0, weight=1)
-#root.columnconfigure(0, weight=1)
-
 def main():
     text_box_queue = Queue()
 
@@ -378,6 +375,10 @@ def main():
     app.mainloop()
 
 main()
+
+# +++ RESIZE +++
+#root.rowconfigure(0, weight=1)
+#root.columnconfigure(0, weight=1)
 
 #label_source_path.rowconfigure(1, weight=1)
 #label_source_path.columnconfigure(1, weight=1)
